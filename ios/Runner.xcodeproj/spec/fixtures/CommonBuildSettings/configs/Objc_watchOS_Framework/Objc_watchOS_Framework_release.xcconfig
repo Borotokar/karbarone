@@ -1,0 +1,2 @@
+#include "Objc_watchOS_Framework/Objc_watchOS_Framework_base.xcconfig"
+VALIDATE_PRODUCT = YES

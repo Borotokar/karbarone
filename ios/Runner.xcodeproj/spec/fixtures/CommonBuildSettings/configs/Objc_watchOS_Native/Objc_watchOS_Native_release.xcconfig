@@ -1,0 +1,2 @@
+#include "Objc_watchOS_Native/Objc_watchOS_Native_base.xcconfig"
+VALIDATE_PRODUCT = YES

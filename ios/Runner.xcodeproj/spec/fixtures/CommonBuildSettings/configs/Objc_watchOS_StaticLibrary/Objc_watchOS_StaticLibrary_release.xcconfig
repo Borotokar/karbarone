@@ -1,0 +1,2 @@
+#include "Objc_watchOS_StaticLibrary/Objc_watchOS_StaticLibrary_base.xcconfig"
+VALIDATE_PRODUCT = YES

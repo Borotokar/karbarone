@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625087184757",
+    "project_id": "borotokar-5013d",
+    "storage_bucket": "borotokar-5013d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625087184757:android:40c6b2bcb1b297b5851d3c",
+        "android_client_info": {
+          "package_name": "com.example.borotokar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChTt21ErmLYegEoEd4vg0WRzGWcE3hxoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

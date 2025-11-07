@@ -1,0 +1,2 @@
+#include "Swift_tvOS_Native/Swift_tvOS_Native_base.xcconfig"
+VALIDATE_PRODUCT = YES
