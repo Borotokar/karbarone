@@ -1,0 +1,4064 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04595E2D561AB531AF9C216F4FF80945 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE4EEAE0ACD693A81782A9E9BFA9A51 /* AppDelegate.m */; };
+		0A760D5AFE005099436C3FB4962A2A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414940C2A45A31D4E7691AFADAF75323 /* Main.storyboard */; };
+		0B4AE11FC859856ABB23B64C935AEF6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 033F7D75B544F437C20709F841DF9499 /* AppDelegate.m */; };
+		0FB8EDF98EF378B230BF423EFDCE93A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8390762C0798DDB536E7267F0EDFAE92 /* Assets.xcassets */; };
+		11917789B7B7A08DFBD005E1478C1C14 /* Objc_watchOS_StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C54CF32F72EF0B965DD909D6270BF5D4 /* Objc_watchOS_StaticLibrary.m */; };
+		14EA69C544BB6DB287B9EB0132B94F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47F93023B15076325C7D7514994EC96 /* Main.storyboard */; };
+		1EE215D89D573F63C555023B6480A9A0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D1F23E8EAFF37A720BC3A5DDFEEA9D /* MasterViewController.m */; };
+		204243AD39BC041FC627BC2B6BA528F6 /* Swift_watchOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2DA72FEFBDB7FDF81772BCC78C037 /* Swift_watchOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22A1EAA66B0B3B26809DC467D64F564E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32CA57E82B1291F306A10FC7F4ACBF1 /* ViewController.m */; };
+		270675092594F8990B7D57847B429D84 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A260DE7BF069F7F314DE11314D62CAA /* Interface.storyboard */; };
+		29C332DADE24C9817D93412DE7B959A1 /* Objc_tvOS_StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A15D8960F24DBD01028111E9AAD6368 /* Objc_tvOS_StaticLibrary.h */; };
+		2BF7FE06190C6BFA0BAA85B11F673B08 /* Swift_tvOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FF2947C64E27785A4177CFE7178E04 /* Swift_tvOS_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CA7167A9BBB36CF5D196E7139006A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864AC0AE15A2D978D65305AEA506F713 /* Main.storyboard */; };
+		335B82AC5163767EA465A4A85F354CB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF5AB61944A6C6432AC7C76C6A049C9 /* Assets.xcassets */; };
+		337CFF10C480AB28584B74EB2D692C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B508A14AC13D019DD5C1389EA70071 /* Assets.xcassets */; };
+		3F7AB10CFF30559FE31B19FBDBE49058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF02F70B020B44C787474B0A60E365FB /* Assets.xcassets */; };
+		462B62F20F53090CD9FE340DB2912D55 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE845B7827EFCF618C5989AE2FD03C3E /* DetailViewController.m */; };
+		4B658DD5816A5ED04FCF627850AFF3D2 /* Swift_OSX_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 975267591BD3F99806D1212900AEEC14 /* Swift_OSX_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F8A4792877C9D60AF256B689975E211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3371ACEA343E2BD7E2DB70CA5F8331 /* main.m */; };
+		5040109D636CD974EB7692A6BE2D5C8D /* Swift_watchOS_Native Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A992F6A42E0191E43ECD90F47D2F60E /* Swift_watchOS_Native Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5222E782238C88AD19A4276D51673D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104EE3D74D28A79C4BF72661161D1506 /* LaunchScreen.storyboard */; };
+		5289E5E7B3074600440233B4D9D1AA6D /* Swift_tvOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289FC3A4C98DE59932AE5338E42B8BB1 /* Swift_tvOS_Framework.framework */; };
+		567412F7EAE3184E356CCC65384FEF9A /* Objc_OSX_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE6397E93C8819085B4B89D2E1D414 /* Objc_OSX_Framework.framework */; };
+		5A0E3A36774D59E5F1E2519E37E8A38C /* Objc_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A10836B3917BB024DE2F3C8BD7B6158 /* Objc_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B777BC3DAE5138A7D6482FF37000181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF479BFA135CFC3924586A76DA7064C /* Main.storyboard */; };
+		615B7DA2AB1FF4533B7E3E320FF284D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB36F06BCF58231F4D78E7563754D35 /* AppDelegate.swift */; };
+		66105F36884B37BC4330E1F484CF4171 /* Objc_iOS_StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 447E220F84CBACB00304317916201DAE /* Objc_iOS_StaticLibrary.h */; };
+		661633C2507177BB338AF7115BA5BE10 /* Objc_OSX_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77BE6397E93C8819085B4B89D2E1D414 /* Objc_OSX_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69C02766564791CB46396D4D38999F66 /* Objc_watchOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1858C22E1B8365F7A2905B4234C4 /* Objc_watchOS_Framework.framework */; };
+		6CD4D4F94EE1C719025476D430C26B01 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648397884D9463BE273672E2F3210D2 /* NotificationController.m */; };
+		6D216C8C882CA495C1C020C5C59B2017 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D07AE486D819EF7F355BF5475C0D2C /* DetailViewController.swift */; };
+		7654D13FBA7B12C2C9F09999711BCBB3 /* Objc_watchOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 344E1858C22E1B8365F7A2905B4234C4 /* Objc_watchOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7DAE2897ED4655274FE15959F1299ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFE61442C36FBF1DC0DB51A6472310C /* ViewController.swift */; };
+		80242A7D973F89E987E9C0F61B91D91D /* Objc_OSX_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5A348FE4190D8064E43137E3EAC5E4 /* Objc_OSX_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		830A5782D0D317F31FE10DA572D5F627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42DD96AB678B9F992E240EAEED19846E /* Assets.xcassets */; };
+		8B036FCED8BC09089F5069E877F76CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE162D15CF143E49DE229A39FEFA8E1D /* Assets.xcassets */; };
+		8DB14DB4727FE25E017288433A191AA3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A6FA3ED1A6440386E8F57E9D0B8E84 /* Interface.storyboard */; };
+		8E8213E46B178C345051F3C687522073 /* Swift_watchOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1760318E675C275A62B0532106A61F /* Swift_watchOS_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9039FF3054C87B1093A4775F6B8CE654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65937FE8C7D8F7FA1B632C140E21272 /* ViewController.swift */; };
+		90FA46F5913A09D07A7C6BEA47ADAC0F /* Objc_OSX_DynamicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4CD439F4CB454CAF0060EB33CB8375 /* Objc_OSX_DynamicLibrary.m */; };
+		934E2C589B85D32911FBDFA436DE8566 /* Swift_watchOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4C2DA72FEFBDB7FDF81772BCC78C037 /* Swift_watchOS_Framework.framework */; };
+		93691A5E91D5C476BCB5D451FD98B882 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C50709E8D75B8D623B60E9C1D15F5A /* ExtensionDelegate.m */; };
+		94CF6CA47CC53920AC877A414A4DC4FE /* Objc_watchOS_StaticLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94B0E200A44EDDC93BCF36B25C671849 /* Objc_watchOS_StaticLibrary.h */; };
+		9A236F36AB5C9D1A5D2B070F0497AB02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E74F6984DAE570A0FF9071B823C78B /* Assets.xcassets */; };
+		9E86CE189CEC74CC9A14A900F617996D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0269E875F5D454B448D00D3F462F6A /* MasterViewController.swift */; };
+		9F635C0296B9C37DDEE8C738E3DC44F0 /* Objc_tvOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 687160C8BA537E0DF8499E81531312E2 /* Objc_tvOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FB162BCBF66E5173B2D96D8AD1D8EBD /* Swift_OSX_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = A7502CA7CC8A176D58D351D4C9583CAC /* Swift_OSX_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7E41F418BF72BD767F1825F22FB5DCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B60712F6E9DF3D4617C52944326094 /* AppDelegate.m */; };
+		A8B2D2FAD07CBDE7E0D1796F7A5B67CA /* Objc_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A10836B3917BB024DE2F3C8BD7B6158 /* Objc_iOS_Framework.framework */; };
+		ABA2A87E82AA74B9C1824587A1F547F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5B399022046D252E13C5D5549D6715 /* LaunchScreen.storyboard */; };
+		B07BEC79BC3EB684F8642913CFBBEEE7 /* Objc_OSX_DynamicLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = D25537E10E1E74F77FF070878C0F608F /* Objc_OSX_DynamicLibrary.h */; };
+		B1E92CB0D6DFEE01B2CFE997A8FF42A5 /* Objc_watchOS_Native.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AD0BE61D7680A959CF96EC969643F203 /* Objc_watchOS_Native.app */; };
+		B2FAF45904611E6AB066845522F8B813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FA7A426FF4E3152603375C8E80B2E4 /* Main.storyboard */; };
+		B8A56E4D353E50A824F6C76C8213E5FA /* Objc_watchOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = BB438EAA26B061D5AAC77AB2624C557B /* Objc_watchOS_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC0A636C17368BD8F800CEEBB8F0646E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4D919C0AB868E05E646FC569ACD29E /* NotificationController.swift */; };
+		BDCC0B41542B0DBDF442A9172E288C54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41DDC288850BAC323EF1EB06A544BF5 /* ViewController.m */; };
+		CA1BBAB712241331C348484C7B93E71C /* Objc_tvOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9D92A417E4D3CB8ADC2FA43AA5BF98 /* Objc_tvOS_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CADA14D529F9FA43C700665B73EEFC14 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B54E60797F3D1AFE59975C42074C4CF /* InterfaceController.swift */; };
+		CCB67175675F09F31D0DAA2712111999 /* Objc_iOS_StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C048157F68B16857F3BCFF318D125C96 /* Objc_iOS_StaticLibrary.m */; };
+		D56D38D78C6591976A8CE75E26588C1B /* Swift_tvOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 289FC3A4C98DE59932AE5338E42B8BB1 /* Swift_tvOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D5B012EE82984B02AE6BE84AE68BCD26 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F75EB7ADB638A20A0B2FC4EDE0D14194 /* InterfaceController.m */; };
+		D65EF8A1858F43EB631DB56D935F985A /* Objc_tvOS_StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FEA13AA52D9D38D7E6890AA354A7AD /* Objc_tvOS_StaticLibrary.m */; };
+		D6F7652D4C88A27E63990848C18F6A82 /* Objc_OSX_StaticLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7CDA64E1F9938C77E2579DC721CC90 /* Objc_OSX_StaticLibrary.m */; };
+		D96AE5D826688FDF743F185460A33714 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C84E349018F768C22A7F54FB72C2FF0 /* main.m */; };
+		DA40E13416F63BFC0A305F402CE67788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB811F0BC307A3A34A627DE95E2FE83 /* Assets.xcassets */; };
+		DAA797B83CCF8B9D7C32F9CF44924050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6274B8E0B063D779C48AE3EFBB7212C /* Main.storyboard */; };
+		DD020AA420EAF77E643EAA9D9B30DA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45736781061E849F532BEF70201608 /* AppDelegate.swift */; };
+		DD19360376E65BEC1BF40F0567CD8DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6236AEC91884A30D564C8FBFE7A385 /* main.m */; };
+		DD6B3F951F53A48BBBF341C5D95EEA54 /* Swift_iOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478B63D46B4D25BE72E88C5BE1FD2CD5 /* Swift_iOS_Framework.framework */; };
+		DF5AA4670F3D190A90252E82CD88ED49 /* Objc_iOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B114808B07645AE365B24177C20952A /* Objc_iOS_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0C2AAEA782F25E9EB942BB23BAF86CE /* Swift_iOS_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7561B7995E3048ACEABEA29013CBEFE0 /* Swift_iOS_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3E4B3D77E2AE6D67D4F214F0D14B11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1294902152A5D10FD122C43E30BBECF0 /* Assets.xcassets */; };
+		EB0A28014EFACF082C4A4B8A676E7639 /* Swift_iOS_Framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 478B63D46B4D25BE72E88C5BE1FD2CD5 /* Swift_iOS_Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE1DA9E5614F598EB72BF034CFDE05E2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F29EA9799F071CEECBAF28320FE01E3 /* ExtensionDelegate.swift */; };
+		F1BDA4A9370F2BA08FECC0B95B3204A3 /* Swift_OSX_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975267591BD3F99806D1212900AEEC14 /* Swift_OSX_Framework.framework */; };
+		F3E30CD73BAEB911157A1B325B514DCB /* Objc_tvOS_Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687160C8BA537E0DF8499E81531312E2 /* Objc_tvOS_Framework.framework */; };
+		F7BB9D0E0CE1C511D10A2D90767C949C /* Objc_OSX_StaticLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 349132647258B615F8F988690C1DEE99 /* Objc_OSX_StaticLibrary.h */; };
+		F9755F65BA2257DCAF844304678A8135 /* Objc_watchOS_Native Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A359A9C84746447CF182EEB04C0CCFE4 /* Objc_watchOS_Native Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA73FCEE5DA33549937E1DCB7A774EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144098E707C1EDCE87F636CAABEC7169 /* Assets.xcassets */; };
+		FBF1D15785C3A099736A136D13B4FA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE737C86C79FE916E01777F7DFF9DD4 /* AppDelegate.swift */; };
+		FF8172028A70AE06B0AC060C2F2E2BCE /* Swift_watchOS_Native.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6D24FA15B18A44F3A302266DEA77F705 /* Swift_watchOS_Native.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07D7100B412112DE94D096E220CD4D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7733F1F7202B2DB30BABC898173B9DF7;
+			remoteInfo = Swift_watchOS_Framework;
+		};
+		25004F91868B2BD176607AF5BDBA22BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C5F00D6FFCED8D6821E76555AB722E0;
+			remoteInfo = Objc_watchOS_Framework;
+		};
+		3756ADD9885AE307E5FD790B40B22E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E51412EA1BE023A7F5BC02B86DA980;
+			remoteInfo = "Swift_watchOS_Native Extension";
+		};
+		5428C446B190FCE1FCB2A0E4C0B1BFE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E483ACC5743A2EF0FB7F8CE95FA4E82;
+			remoteInfo = Objc_OSX_Framework;
+		};
+		7542A5161CFD534F3882F22137DE505B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4029584B15356AFCF3BF143B510D3B2;
+			remoteInfo = Objc_watchOS_Native;
+		};
+		84E04089E7256BE598E1EE9B10446A02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17E874872A495E54FAA0B94B4DF5547B;
+			remoteInfo = Swift_watchOS_Native;
+		};
+		8A796C8C4848002DA74A2751BB86C14A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F009A9587931856FE90FA038D6F914A;
+			remoteInfo = Swift_iOS_Framework;
+		};
+		BCF41F0C79C9FA1BAF968B7982C02944 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA1DD8D75AE4B4E21DF860C375ADB938;
+			remoteInfo = Objc_tvOS_Framework;
+		};
+		D11F9F995DBDEC4EEA1FC74158E0AB98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F4C96EA9CA39F64E1F1EE9E5EFC9BB;
+			remoteInfo = Objc_iOS_Framework;
+		};
+		D70567F08D778DDF3E26926314999A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E7D040DFCC7B409C8D073CF903015E;
+			remoteInfo = Swift_OSX_Framework;
+		};
+		D860BDC2684EFC9C8BDC6CA7A8A740DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17AF55CFB0BBBB7B76815D6539596050;
+			remoteInfo = Swift_tvOS_Framework;
+		};
+		DA1C18F56A7EA280780FD92B7C7AFF6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2C8BD51A61C2FC8F1121FF86375BB1E;
+			remoteInfo = "Objc_watchOS_Native Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		134283E7C4E0BCA9B2BD5568BDD5D731 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B658DD5816A5ED04FCF627850AFF3D2 /* Swift_OSX_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EEC01BA04912D53ED31D4AEC5E185FD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				94CF6CA47CC53920AC877A414A4DC4FE /* Objc_watchOS_StaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342C9C9563C58AEB21B747BF09D4B3F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7654D13FBA7B12C2C9F09999711BCBB3 /* Objc_watchOS_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E7EEE4A9825A2862415595FE4C819E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				661633C2507177BB338AF7115BA5BE10 /* Objc_OSX_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4AEF1CF0744B5D85C69A3E57F35EE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				29C332DADE24C9817D93412DE7B959A1 /* Objc_tvOS_StaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BFA8FA74DF660C782009666A0EBD38C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				66105F36884B37BC4330E1F484CF4171 /* Objc_iOS_StaticLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89129A028C683D19D714F4C593B3843 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F9755F65BA2257DCAF844304678A8135 /* Objc_watchOS_Native Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3FC4B5EE4161BC8DE7904A36A8C2AE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				204243AD39BC041FC627BC2B6BA528F6 /* Swift_watchOS_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D241894A6586BACF5DBFA3EFB5A2CD19 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D56D38D78C6591976A8CE75E26588C1B /* Swift_tvOS_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D694A09AAD1ED276499281DD7962EA1F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FF8172028A70AE06B0AC060C2F2E2BCE /* Swift_watchOS_Native.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9355D890E8C9814C013C2CD78AC2292 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB0A28014EFACF082C4A4B8A676E7639 /* Swift_iOS_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9634866A7D7A525B610FDCD71F6F17 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B1E92CB0D6DFEE01B2CFE997A8FF42A5 /* Objc_watchOS_Native.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6626BC5E77D3B902060FB15C1176FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5040109D636CD974EB7692A6BE2D5C8D /* Swift_watchOS_Native Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6A1FB4CC17F499E40794A196230F83 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A0E3A36774D59E5F1E2519E37E8A38C /* Objc_iOS_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EC85F19242FD5445D3CC8F1C68230F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F635C0296B9C37DDEE8C738E3DC44F0 /* Objc_tvOS_Framework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02692FDEA6F510A7F270A6C0D98B7CF4 /* Objc_tvOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objc_tvOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		033F7D75B544F437C20709F841DF9499 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04BCA1F793D4299A997E54A1331CBB76 /* Swift_OSX_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_OSX_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0516D3762766A9C12CFF860A2688BCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B114808B07645AE365B24177C20952A /* Objc_iOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_iOS_Framework.h; sourceTree = "<group>"; };
+		0E942524EB158573411B5C746E3122B4 /* libObjc_watchOS_StaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjc_watchOS_StaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F29EA9799F071CEECBAF28320FE01E3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1294902152A5D10FD122C43E30BBECF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		144098E707C1EDCE87F636CAABEC7169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C0269E875F5D454B448D00D3F462F6A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		1D55F664949F8794CA24F1EDB813EB08 /* Objc_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objc_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E9D92A417E4D3CB8ADC2FA43AA5BF98 /* Objc_tvOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_tvOS_Framework.h; sourceTree = "<group>"; };
+		23075EB0D4D3424FC52260C58A102CE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		23639C3A2C7BB2C955475CBD0EAE971E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273EC7D38B4E738F018ABC851898CBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27961BB2E56A364312179C0093C25532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		289FC3A4C98DE59932AE5338E42B8BB1 /* Swift_tvOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift_tvOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A15D8960F24DBD01028111E9AAD6368 /* Objc_tvOS_StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_tvOS_StaticLibrary.h; sourceTree = "<group>"; };
+		2B54E60797F3D1AFE59975C42074C4CF /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2C84E349018F768C22A7F54FB72C2FF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		344E1858C22E1B8365F7A2905B4234C4 /* Objc_watchOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Objc_watchOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		349132647258B615F8F988690C1DEE99 /* Objc_OSX_StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_OSX_StaticLibrary.h; sourceTree = "<group>"; };
+		37BDC7EE337C697817C6CC8467EBF3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB36F06BCF58231F4D78E7563754D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FE97F8DA267810EDA8EA476902EF344 /* Swift_OSX_Native.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swift_OSX_Native.entitlements; sourceTree = "<group>"; };
+		41D1F23E8EAFF37A720BC3A5DDFEEA9D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		42DD96AB678B9F992E240EAEED19846E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		447E220F84CBACB00304317916201DAE /* Objc_iOS_StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_iOS_StaticLibrary.h; sourceTree = "<group>"; };
+		478B63D46B4D25BE72E88C5BE1FD2CD5 /* Swift_iOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift_iOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B3F4A88F1353AD2D2EEE64D929103F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		54FBA24963C3BF3C7B84B0DB20559781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D07AE486D819EF7F355BF5475C0D2C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		592C6A549EA6518394B7DCE697BFB3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FEA13AA52D9D38D7E6890AA354A7AD /* Objc_tvOS_StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_tvOS_StaticLibrary.m; sourceTree = "<group>"; };
+		5A992F6A42E0191E43ECD90F47D2F60E /* Swift_watchOS_Native Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Swift_watchOS_Native Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE737C86C79FE916E01777F7DFF9DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D4CD439F4CB454CAF0060EB33CB8375 /* Objc_OSX_DynamicLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_OSX_DynamicLibrary.m; sourceTree = "<group>"; };
+		5E7CDA64E1F9938C77E2579DC721CC90 /* Objc_OSX_StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_OSX_StaticLibrary.m; sourceTree = "<group>"; };
+		5F5A348FE4190D8064E43137E3EAC5E4 /* Objc_OSX_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_OSX_Framework.h; sourceTree = "<group>"; };
+		639E30BB585029F543D8F1B9B8105576 /* Objc_OSX_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objc_OSX_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B60712F6E9DF3D4617C52944326094 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64C50709E8D75B8D623B60E9C1D15F5A /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		64DAAF142E8081AF6A6998F2EC876080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		687160C8BA537E0DF8499E81531312E2 /* Objc_tvOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Objc_tvOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6894F4D847F2FF51516EB884A987444C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D24FA15B18A44F3A302266DEA77F705 /* Swift_watchOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_watchOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7561B7995E3048ACEABEA29013CBEFE0 /* Swift_iOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift_iOS_Framework.h; sourceTree = "<group>"; };
+		77114CF444AF2045EE8BC0549D72B116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		771210F670CC186AF1B2F2D389394EBE /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		772D3D83BBB95D880CAD2CCA04ABD09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77BE6397E93C8819085B4B89D2E1D414 /* Objc_OSX_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Objc_OSX_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		785C3CB209A890B26C7A883BC401D3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AACEF012821CB115ED389E59C2A3E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AB3A934CA5E3E78BE4B6FD1F7E8FE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1760318E675C275A62B0532106A61F /* Swift_watchOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift_watchOS_Framework.h; sourceTree = "<group>"; };
+		7C87B7AFD8D74D07B6BD22441F46369F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D22E0901B3D79F2888166EA96222065 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8390762C0798DDB536E7267F0EDFAE92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86387DF86B8300D977BC3DFF4998BC79 /* libObjc_OSX_DynamicLibrary.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libObjc_OSX_DynamicLibrary.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A89A352B067FE7644CDAD74B77B4FE /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		88C3667AF89F18ABF4B1DF82B6C31FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA4EF93605008568D397FE740DD993B /* libObjc_OSX_StaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjc_OSX_StaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B0BF4873E2248B64C2C9644BF59A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B0E200A44EDDC93BCF36B25C671849 /* Objc_watchOS_StaticLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_watchOS_StaticLibrary.h; sourceTree = "<group>"; };
+		9648397884D9463BE273672E2F3210D2 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		96E7342AE19A2C09DAB61BF903DC72C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975267591BD3F99806D1212900AEEC14 /* Swift_OSX_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift_OSX_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		985742B9B199621576508F2CFE6578E9 /* libObjc_iOS_StaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjc_iOS_StaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A10836B3917BB024DE2F3C8BD7B6158 /* Objc_iOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Objc_iOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6236AEC91884A30D564C8FBFE7A385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FA9FD363EA5600F3CB50DA122FF3109 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A359A9C84746447CF182EEB04C0CCFE4 /* Objc_watchOS_Native Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Objc_watchOS_Native Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7502CA7CC8A176D58D351D4C9583CAC /* Swift_OSX_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift_OSX_Framework.h; sourceTree = "<group>"; };
+		AA3313943C997D191E2EA87045669CAA /* libObjc_tvOS_StaticLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjc_tvOS_StaticLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7C8995A316116A353ABA6EBB6B9254 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AD0BE61D7680A959CF96EC969643F203 /* Objc_watchOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objc_watchOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD269520A648AC4FDACF54AD174E47AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD75EFD11F8472B430C69BC30A23D38A /* Swift_tvOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_tvOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE845B7827EFCF618C5989AE2FD03C3E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B3424741284B44AA1AC956EBD33B45E9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B369C818849CE255D663297094C323B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C83FE3C6B17C910111F2C81F02939C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B9B6F6F19F193EFD815E92FA253D1F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB438EAA26B061D5AAC77AB2624C557B /* Objc_watchOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_watchOS_Framework.h; sourceTree = "<group>"; };
+		BD5BA332A2276241F6D8FC732D751E6E /* Swift_iOS_Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_iOS_Native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3371ACEA343E2BD7E2DB70CA5F8331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF7828A090DCF91489BEC2CE9F56D813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFE61442C36FBF1DC0DB51A6472310C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C048157F68B16857F3BCFF318D125C96 /* Objc_iOS_StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_iOS_StaticLibrary.m; sourceTree = "<group>"; };
+		C41DDC288850BAC323EF1EB06A544BF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4C2DA72FEFBDB7FDF81772BCC78C037 /* Swift_watchOS_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swift_watchOS_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54CF32F72EF0B965DD909D6270BF5D4 /* Objc_watchOS_StaticLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_watchOS_StaticLibrary.m; sourceTree = "<group>"; };
+		C5EAD68A0E1D9DAC4D9260F6942BD593 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C65937FE8C7D8F7FA1B632C140E21272 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C93FD405817A89E1E17D492A20A9F8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC06DF4435D5D09EEE5596096091B9E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD45736781061E849F532BEF70201608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D25537E10E1E74F77FF070878C0F608F /* Objc_OSX_DynamicLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objc_OSX_DynamicLibrary.h; sourceTree = "<group>"; };
+		D32CA57E82B1291F306A10FC7F4ACBF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D46D655695ED8430A38B654793D66F64 /* OSX_Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSX_Bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F948B65E6FFB60AF67676A0B42239B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D84EE831FD7239A741A0003E21FC3EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8FF2947C64E27785A4177CFE7178E04 /* Swift_tvOS_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swift_tvOS_Framework.h; sourceTree = "<group>"; };
+		DB4D919C0AB868E05E646FC569ACD29E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E2E74F6984DAE570A0FF9071B823C78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7CC4A2B27FC567569F7F0B3994CCFE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8B508A14AC13D019DD5C1389EA70071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAF28E518E89B2FB98CC95394C598FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE162D15CF143E49DE229A39FEFA8E1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEE4EEAE0ACD693A81782A9E9BFA9A51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF02F70B020B44C787474B0A60E365FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F418110FF706AAC1561C69C7D84636E0 /* Objc_OSX_Native.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Objc_OSX_Native.entitlements; sourceTree = "<group>"; };
+		F6BBF49BF6CB8FDED38CD40F2C5C7F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F746EF5CE6191D44E45791BCDE04052C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F75EB7ADB638A20A0B2FC4EDE0D14194 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		FCB811F0BC307A3A34A627DE95E2FE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE71925DB145177FE15852938196B516 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		FFF5AB61944A6C6432AC7C76C6A049C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07A07377D2A64D9B37B32FE6F3E2F0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E497FABCE6167EABE6E0C1C6DDDC694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33859BB17AFAD9C730BD9F78F9ABF55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35FB57B9D19F03C33462A996840C7DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E30CD73BAEB911157A1B325B514DCB /* Objc_tvOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A81EDD0B8C9B8E94F98762EAAFAC99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C02766564791CB46396D4D38999F66 /* Objc_watchOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC93F19C3D2AEBE91B31211269D830B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567412F7EAE3184E356CCC65384FEF9A /* Objc_OSX_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55794A491C7254EE13BAF1D5CE23E124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835F3AE8CC21C8E1EEFB10D8E925214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9A573F77ED74F9FF4BABD30D554011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B2D2FAD07CBDE7E0D1796F7A5B67CA /* Objc_iOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616498FD14DF026239D9E7FCBED9AEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F658E059CADAEF6BA4DB31B7CCD40D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E01D2287FA0393C597C8D93474702D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BEA305D311E0D23F58A2424114F9E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BDA4A9370F2BA08FECC0B95B3204A3 /* Swift_OSX_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F4F60E6125218DF742FF4C30F7A89E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD6B3F951F53A48BBBF341C5D95EEA54 /* Swift_iOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E42838C118E313C533EA6CBFCE64B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424BFD9877A065F9295C9C60106C574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6ACF310D4D29636634F51173DD961F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5289E5E7B3074600440233B4D9D1AA6D /* Swift_tvOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC2AA0602F37D26300AA5AB0F1A5264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85793F547A9E4184329E7372B835670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6FFF4AD7F26D450B8CDD9954BD71CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934E2C589B85D32911FBDFA436DE8566 /* Swift_watchOS_Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A1436691489C2A7296BABF32B46511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B14BF2A211E30B0A651E0D20907AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00FA6C814EDE7C586517A136F246BBA0 /* Objc_watchOS_Native Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8B508A14AC13D019DD5C1389EA70071 /* Assets.xcassets */,
+				771210F670CC186AF1B2F2D389394EBE /* ExtensionDelegate.h */,
+				64C50709E8D75B8D623B60E9C1D15F5A /* ExtensionDelegate.m */,
+				88C3667AF89F18ABF4B1DF82B6C31FAE /* Info.plist */,
+				C5EAD68A0E1D9DAC4D9260F6942BD593 /* InterfaceController.h */,
+				F75EB7ADB638A20A0B2FC4EDE0D14194 /* InterfaceController.m */,
+				86A89A352B067FE7644CDAD74B77B4FE /* NotificationController.h */,
+				9648397884D9463BE273672E2F3210D2 /* NotificationController.m */,
+				B3424741284B44AA1AC956EBD33B45E9 /* PushNotificationPayload.apns */,
+			);
+			path = "Objc_watchOS_Native Extension";
+			sourceTree = "<group>";
+		};
+		04370772215CB8C44AEA59F342F24B9D /* Objc_iOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				96E7342AE19A2C09DAB61BF903DC72C2 /* Info.plist */,
+				0B114808B07645AE365B24177C20952A /* Objc_iOS_Framework.h */,
+			);
+			path = Objc_iOS_Framework;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		192C0DF49E4050B0710A9EE033CAFA9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				985742B9B199621576508F2CFE6578E9 /* libObjc_iOS_StaticLibrary.a */,
+				86387DF86B8300D977BC3DFF4998BC79 /* libObjc_OSX_DynamicLibrary.dylib */,
+				8AA4EF93605008568D397FE740DD993B /* libObjc_OSX_StaticLibrary.a */,
+				AA3313943C997D191E2EA87045669CAA /* libObjc_tvOS_StaticLibrary.a */,
+				0E942524EB158573411B5C746E3122B4 /* libObjc_watchOS_StaticLibrary.a */,
+				9A10836B3917BB024DE2F3C8BD7B6158 /* Objc_iOS_Framework.framework */,
+				1D55F664949F8794CA24F1EDB813EB08 /* Objc_iOS_Native.app */,
+				77BE6397E93C8819085B4B89D2E1D414 /* Objc_OSX_Framework.framework */,
+				639E30BB585029F543D8F1B9B8105576 /* Objc_OSX_Native.app */,
+				687160C8BA537E0DF8499E81531312E2 /* Objc_tvOS_Framework.framework */,
+				02692FDEA6F510A7F270A6C0D98B7CF4 /* Objc_tvOS_Native.app */,
+				344E1858C22E1B8365F7A2905B4234C4 /* Objc_watchOS_Framework.framework */,
+				AD0BE61D7680A959CF96EC969643F203 /* Objc_watchOS_Native.app */,
+				A359A9C84746447CF182EEB04C0CCFE4 /* Objc_watchOS_Native Extension.appex */,
+				D46D655695ED8430A38B654793D66F64 /* OSX_Bundle.bundle */,
+				478B63D46B4D25BE72E88C5BE1FD2CD5 /* Swift_iOS_Framework.framework */,
+				BD5BA332A2276241F6D8FC732D751E6E /* Swift_iOS_Native.app */,
+				975267591BD3F99806D1212900AEEC14 /* Swift_OSX_Framework.framework */,
+				04BCA1F793D4299A997E54A1331CBB76 /* Swift_OSX_Native.app */,
+				289FC3A4C98DE59932AE5338E42B8BB1 /* Swift_tvOS_Framework.framework */,
+				AD75EFD11F8472B430C69BC30A23D38A /* Swift_tvOS_Native.app */,
+				C4C2DA72FEFBDB7FDF81772BCC78C037 /* Swift_watchOS_Framework.framework */,
+				6D24FA15B18A44F3A302266DEA77F705 /* Swift_watchOS_Native.app */,
+				5A992F6A42E0191E43ECD90F47D2F60E /* Swift_watchOS_Native Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2064A0422E84CD9BB2B954347C89515B /* Objc_watchOS_StaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				94B0E200A44EDDC93BCF36B25C671849 /* Objc_watchOS_StaticLibrary.h */,
+				C54CF32F72EF0B965DD909D6270BF5D4 /* Objc_watchOS_StaticLibrary.m */,
+			);
+			path = Objc_watchOS_StaticLibrary;
+			sourceTree = "<group>";
+		};
+		3CF681C11A169D24A7312688D062086E /* Objc_iOS_StaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				447E220F84CBACB00304317916201DAE /* Objc_iOS_StaticLibrary.h */,
+				C048157F68B16857F3BCFF318D125C96 /* Objc_iOS_StaticLibrary.m */,
+			);
+			path = Objc_iOS_StaticLibrary;
+			sourceTree = "<group>";
+		};
+		48086D8C17AD2D7B2EEBBC1304E68F9A /* Swift_iOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				BF7828A090DCF91489BEC2CE9F56D813 /* Info.plist */,
+				7561B7995E3048ACEABEA29013CBEFE0 /* Swift_iOS_Framework.h */,
+			);
+			path = Swift_iOS_Framework;
+			sourceTree = "<group>";
+		};
+		4BEFB4D8F0BC36A5393E875D07169DA3 /* Objc_OSX_StaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				349132647258B615F8F988690C1DEE99 /* Objc_OSX_StaticLibrary.h */,
+				5E7CDA64E1F9938C77E2579DC721CC90 /* Objc_OSX_StaticLibrary.m */,
+			);
+			path = Objc_OSX_StaticLibrary;
+			sourceTree = "<group>";
+		};
+		571F1A99868DC51CC2F095C039984B0A /* Objc_tvOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				0516D3762766A9C12CFF860A2688BCBE /* Info.plist */,
+				1E9D92A417E4D3CB8ADC2FA43AA5BF98 /* Objc_tvOS_Framework.h */,
+			);
+			path = Objc_tvOS_Framework;
+			sourceTree = "<group>";
+		};
+		7352C475590EAF67E3A3660E65D4DEEE /* Swift_watchOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EAF28E518E89B2FB98CC95394C598FF2 /* Info.plist */,
+				7C1760318E675C275A62B0532106A61F /* Swift_watchOS_Framework.h */,
+			);
+			path = Swift_watchOS_Framework;
+			sourceTree = "<group>";
+		};
+		7C2A7EF3B42AD5FD13253051D5944C44 /* Swift_iOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				5CE737C86C79FE916E01777F7DFF9DD4 /* AppDelegate.swift */,
+				EF02F70B020B44C787474B0A60E365FB /* Assets.xcassets */,
+				57D07AE486D819EF7F355BF5475C0D2C /* DetailViewController.swift */,
+				37BDC7EE337C697817C6CC8467EBF3CA /* Info.plist */,
+				9B5B399022046D252E13C5D5549D6715 /* LaunchScreen.storyboard */,
+				E9FA7A426FF4E3152603375C8E80B2E4 /* Main.storyboard */,
+				1C0269E875F5D454B448D00D3F462F6A /* MasterViewController.swift */,
+			);
+			path = Swift_iOS_Native;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				04370772215CB8C44AEA59F342F24B9D /* Objc_iOS_Framework */,
+				ADE269847FC6944D8C5BACBE95231FE8 /* Objc_iOS_Native */,
+				3CF681C11A169D24A7312688D062086E /* Objc_iOS_StaticLibrary */,
+				9EDE57042B9D7B7875E8001006CD8FA3 /* Objc_OSX_DynamicLibrary */,
+				BD1AAE270780B07F7FEC0F7391591E5E /* Objc_OSX_Framework */,
+				F3F9080C6B37F0AAE27F33D52BFD90B1 /* Objc_OSX_Native */,
+				4BEFB4D8F0BC36A5393E875D07169DA3 /* Objc_OSX_StaticLibrary */,
+				571F1A99868DC51CC2F095C039984B0A /* Objc_tvOS_Framework */,
+				E6234494B4ADBA5EFA436386B3B96B5A /* Objc_tvOS_Native */,
+				90D255BD191FCDB42AB5A6BAE02C557E /* Objc_tvOS_StaticLibrary */,
+				A08C3785D2F64154C978A8D2AFD4780E /* Objc_watchOS_Framework */,
+				DEFC9B5FBACCCC4BA3DB4894574BBF6E /* Objc_watchOS_Native */,
+				00FA6C814EDE7C586517A136F246BBA0 /* Objc_watchOS_Native Extension */,
+				2064A0422E84CD9BB2B954347C89515B /* Objc_watchOS_StaticLibrary */,
+				D0CB9423FA4C81B5A4427606DDF6C29F /* OSX_Bundle */,
+				192C0DF49E4050B0710A9EE033CAFA9D /* Products */,
+				48086D8C17AD2D7B2EEBBC1304E68F9A /* Swift_iOS_Framework */,
+				7C2A7EF3B42AD5FD13253051D5944C44 /* Swift_iOS_Native */,
+				F8DE996F0074F523101B8489165D7D37 /* Swift_OSX_Framework */,
+				FDA5DEF4279DCCFDFE7909CA3B3F2733 /* Swift_OSX_Native */,
+				91B93DF238B96819CF79992A7E5949DD /* Swift_tvOS_Framework */,
+				F50130A644C78A76644AFA7BF6E91B84 /* Swift_tvOS_Native */,
+				7352C475590EAF67E3A3660E65D4DEEE /* Swift_watchOS_Framework */,
+				7352C475590EAF67E3A3660E65D4DEEE /* Swift_watchOS_Framework */,
+				E0B4DF3D00A9E52E02F28161CA4B1E18 /* Swift_watchOS_Native */,
+				87E4E2B137DEF9FAC4B673EBDB212D0D /* Swift_watchOS_Native Extension */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+			wrapsLines = 0;
+		};
+		87E4E2B137DEF9FAC4B673EBDB212D0D /* Swift_watchOS_Native Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8390762C0798DDB536E7267F0EDFAE92 /* Assets.xcassets */,
+				0F29EA9799F071CEECBAF28320FE01E3 /* ExtensionDelegate.swift */,
+				772D3D83BBB95D880CAD2CCA04ABD09D /* Info.plist */,
+				2B54E60797F3D1AFE59975C42074C4CF /* InterfaceController.swift */,
+				DB4D919C0AB868E05E646FC569ACD29E /* NotificationController.swift */,
+				AC7C8995A316116A353ABA6EBB6B9254 /* PushNotificationPayload.apns */,
+			);
+			path = "Swift_watchOS_Native Extension";
+			sourceTree = "<group>";
+		};
+		90D255BD191FCDB42AB5A6BAE02C557E /* Objc_tvOS_StaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2A15D8960F24DBD01028111E9AAD6368 /* Objc_tvOS_StaticLibrary.h */,
+				59FEA13AA52D9D38D7E6890AA354A7AD /* Objc_tvOS_StaticLibrary.m */,
+			);
+			path = Objc_tvOS_StaticLibrary;
+			sourceTree = "<group>";
+		};
+		91B93DF238B96819CF79992A7E5949DD /* Swift_tvOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				592C6A549EA6518394B7DCE697BFB3BF /* Info.plist */,
+				D8FF2947C64E27785A4177CFE7178E04 /* Swift_tvOS_Framework.h */,
+			);
+			path = Swift_tvOS_Framework;
+			sourceTree = "<group>";
+		};
+		9EDE57042B9D7B7875E8001006CD8FA3 /* Objc_OSX_DynamicLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D25537E10E1E74F77FF070878C0F608F /* Objc_OSX_DynamicLibrary.h */,
+				5D4CD439F4CB454CAF0060EB33CB8375 /* Objc_OSX_DynamicLibrary.m */,
+			);
+			path = Objc_OSX_DynamicLibrary;
+			sourceTree = "<group>";
+		};
+		A08C3785D2F64154C978A8D2AFD4780E /* Objc_watchOS_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				273EC7D38B4E738F018ABC851898CBB2 /* Info.plist */,
+				BB438EAA26B061D5AAC77AB2624C557B /* Objc_watchOS_Framework.h */,
+			);
+			path = Objc_watchOS_Framework;
+			sourceTree = "<group>";
+		};
+		ADE269847FC6944D8C5BACBE95231FE8 /* Objc_iOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				E7CC4A2B27FC567569F7F0B3994CCFE9 /* AppDelegate.h */,
+				033F7D75B544F437C20709F841DF9499 /* AppDelegate.m */,
+				144098E707C1EDCE87F636CAABEC7169 /* Assets.xcassets */,
+				9FA9FD363EA5600F3CB50DA122FF3109 /* DetailViewController.h */,
+				AE845B7827EFCF618C5989AE2FD03C3E /* DetailViewController.m */,
+				AD269520A648AC4FDACF54AD174E47AF /* Info.plist */,
+				104EE3D74D28A79C4BF72661161D1506 /* LaunchScreen.storyboard */,
+				BE3371ACEA343E2BD7E2DB70CA5F8331 /* main.m */,
+				F47F93023B15076325C7D7514994EC96 /* Main.storyboard */,
+				FE71925DB145177FE15852938196B516 /* MasterViewController.h */,
+				41D1F23E8EAFF37A720BC3A5DDFEEA9D /* MasterViewController.m */,
+			);
+			path = Objc_iOS_Native;
+			sourceTree = "<group>";
+		};
+		BD1AAE270780B07F7FEC0F7391591E5E /* Objc_OSX_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				6894F4D847F2FF51516EB884A987444C /* Info.plist */,
+				5F5A348FE4190D8064E43137E3EAC5E4 /* Objc_OSX_Framework.h */,
+			);
+			path = Objc_OSX_Framework;
+			sourceTree = "<group>";
+		};
+		D0CB9423FA4C81B5A4427606DDF6C29F /* OSX_Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				B369C818849CE255D663297094C323B7 /* Info.plist */,
+			);
+			path = OSX_Bundle;
+			sourceTree = "<group>";
+		};
+		DEFC9B5FBACCCC4BA3DB4894574BBF6E /* Objc_watchOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				FCB811F0BC307A3A34A627DE95E2FE83 /* Assets.xcassets */,
+				23639C3A2C7BB2C955475CBD0EAE971E /* Info.plist */,
+				40A6FA3ED1A6440386E8F57E9D0B8E84 /* Interface.storyboard */,
+			);
+			path = Objc_watchOS_Native;
+			sourceTree = "<group>";
+		};
+		E0B4DF3D00A9E52E02F28161CA4B1E18 /* Swift_watchOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				42DD96AB678B9F992E240EAEED19846E /* Assets.xcassets */,
+				7AB3A934CA5E3E78BE4B6FD1F7E8FE38 /* Info.plist */,
+				5A260DE7BF069F7F314DE11314D62CAA /* Interface.storyboard */,
+			);
+			path = Swift_watchOS_Native;
+			sourceTree = "<group>";
+		};
+		E6234494B4ADBA5EFA436386B3B96B5A /* Objc_tvOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				23075EB0D4D3424FC52260C58A102CE9 /* AppDelegate.h */,
+				EEE4EEAE0ACD693A81782A9E9BFA9A51 /* AppDelegate.m */,
+				1294902152A5D10FD122C43E30BBECF0 /* Assets.xcassets */,
+				F6BBF49BF6CB8FDED38CD40F2C5C7F3B /* Info.plist */,
+				9C6236AEC91884A30D564C8FBFE7A385 /* main.m */,
+				864AC0AE15A2D978D65305AEA506F713 /* Main.storyboard */,
+				7D22E0901B3D79F2888166EA96222065 /* ViewController.h */,
+				C41DDC288850BAC323EF1EB06A544BF5 /* ViewController.m */,
+			);
+			path = Objc_tvOS_Native;
+			sourceTree = "<group>";
+		};
+		F3F9080C6B37F0AAE27F33D52BFD90B1 /* Objc_OSX_Native */ = {
+			isa = PBXGroup;
+			children = (
+				F746EF5CE6191D44E45791BCDE04052C /* AppDelegate.h */,
+				63B60712F6E9DF3D4617C52944326094 /* AppDelegate.m */,
+				EE162D15CF143E49DE229A39FEFA8E1D /* Assets.xcassets */,
+				CC06DF4435D5D09EEE5596096091B9E6 /* Info.plist */,
+				2C84E349018F768C22A7F54FB72C2FF0 /* main.m */,
+				414940C2A45A31D4E7691AFADAF75323 /* Main.storyboard */,
+				F418110FF706AAC1561C69C7D84636E0 /* Objc_OSX_Native.entitlements */,
+				D7F948B65E6FFB60AF67676A0B42239B /* ViewController.h */,
+				D32CA57E82B1291F306A10FC7F4ACBF1 /* ViewController.m */,
+			);
+			path = Objc_OSX_Native;
+			sourceTree = "<group>";
+		};
+		F50130A644C78A76644AFA7BF6E91B84 /* Swift_tvOS_Native */ = {
+			isa = PBXGroup;
+			children = (
+				CD45736781061E849F532BEF70201608 /* AppDelegate.swift */,
+				E2E74F6984DAE570A0FF9071B823C78B /* Assets.xcassets */,
+				77114CF444AF2045EE8BC0549D72B116 /* Info.plist */,
+				C6274B8E0B063D779C48AE3EFBB7212C /* Main.storyboard */,
+				BFFE61442C36FBF1DC0DB51A6472310C /* ViewController.swift */,
+			);
+			path = Swift_tvOS_Native;
+			sourceTree = "<group>";
+		};
+		F8DE996F0074F523101B8489165D7D37 /* Swift_OSX_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				93B0BF4873E2248B64C2C9644BF59A8E /* Info.plist */,
+				A7502CA7CC8A176D58D351D4C9583CAC /* Swift_OSX_Framework.h */,
+			);
+			path = Swift_OSX_Framework;
+			sourceTree = "<group>";
+		};
+		FDA5DEF4279DCCFDFE7909CA3B3F2733 /* Swift_OSX_Native */ = {
+			isa = PBXGroup;
+			children = (
+				3AB36F06BCF58231F4D78E7563754D35 /* AppDelegate.swift */,
+				FFF5AB61944A6C6432AC7C76C6A049C9 /* Assets.xcassets */,
+				54FBA24963C3BF3C7B84B0DB20559781 /* Info.plist */,
+				DFF479BFA135CFC3924586A76DA7064C /* Main.storyboard */,
+				3FE97F8DA267810EDA8EA476902EF344 /* Swift_OSX_Native.entitlements */,
+				C65937FE8C7D8F7FA1B632C140E21272 /* ViewController.swift */,
+			);
+			path = Swift_OSX_Native;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2417BBDBE2B000D542C9D85735810EFD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB162BCBF66E5173B2D96D8AD1D8EBD /* Swift_OSX_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301DE51EC5E7676CB7FD3179695CDE5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07BEC79BC3EB684F8642913CFBBEEE7 /* Objc_OSX_DynamicLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A0E1C7D2B043B8CB2263F41A393C269 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A56E4D353E50A824F6C76C8213E5FA /* Objc_watchOS_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4D2CF38A394DC2246BC1824771ED10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1BBAB712241331C348484C7B93E71C /* Objc_tvOS_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8074320936FE3915F5A90E864C6204BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80242A7D973F89E987E9C0F61B91D91D /* Objc_OSX_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ECE8EFE07342EC410AEAC59F92E03F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8213E46B178C345051F3C687522073 /* Swift_watchOS_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2CFBCAB2FE97DB0951F3598687ADF91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5AA4670F3D190A90252E82CD88ED49 /* Objc_iOS_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8081DA3A9A5D88325DBAD8F45B0969D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C2AAEA782F25E9EB942BB23BAF86CE /* Swift_iOS_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E356780688A6683EBD5DEC798A9AE869 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7BB9D0E0CE1C511D10A2D90767C949C /* Objc_OSX_StaticLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25176A8E4FFC3BDDB36FBBD1982565D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF7FE06190C6BFA0BAA85B11F673B08 /* Swift_tvOS_Framework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16002996B7E58D444156280C54103F87 /* Objc_tvOS_StaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EA4B434D7111CFB5D27BBC036B26AE /* Build configuration list for PBXNativeTarget "Objc_tvOS_StaticLibrary" */;
+			buildPhases = (
+				0DD543F396253AE2E2B9CAD04643FC53 /* Sources */,
+				7E01D2287FA0393C597C8D93474702D8 /* Frameworks */,
+				6B4AEF1CF0744B5D85C69A3E57F35EE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_tvOS_StaticLibrary;
+			productName = Objc_tvOS_StaticLibrary;
+			productReference = AA3313943C997D191E2EA87045669CAA /* libObjc_tvOS_StaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		17AF55CFB0BBBB7B76815D6539596050 /* Swift_tvOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FCC02E5922108983E2C2EC7BE644C04 /* Build configuration list for PBXNativeTarget "Swift_tvOS_Framework" */;
+			buildPhases = (
+				BBA9F22FAFB5B44EA7FA4578A1B1755A /* Sources */,
+				55794A491C7254EE13BAF1D5CE23E124 /* Frameworks */,
+				F25176A8E4FFC3BDDB36FBBD1982565D /* Headers */,
+				0078C6C5EA58167D2CD35220A05ACEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_tvOS_Framework;
+			productName = Swift_tvOS_Framework;
+			productReference = 289FC3A4C98DE59932AE5338E42B8BB1 /* Swift_tvOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17E874872A495E54FAA0B94B4DF5547B /* Swift_watchOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CD5782E61EA49940744004132FB867 /* Build configuration list for PBXNativeTarget "Swift_watchOS_Native" */;
+			buildPhases = (
+				D0DA1A5B8EA5C565CB9AE829DAA90E37 /* Resources */,
+				EB6626BC5E77D3B902060FB15C1176FA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC4694D219F56C2DAEEB21C5BCABF6EF /* PBXTargetDependency */,
+			);
+			name = Swift_watchOS_Native;
+			productName = Swift_watchOS_Native;
+			productReference = 6D24FA15B18A44F3A302266DEA77F705 /* Swift_watchOS_Native.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1C5F00D6FFCED8D6821E76555AB722E0 /* Objc_watchOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4F796827E8F432B2178D9F9E288D37 /* Build configuration list for PBXNativeTarget "Objc_watchOS_Framework" */;
+			buildPhases = (
+				0719E26D9760CA8D7B7397B8F8E069AF /* Sources */,
+				A1E42838C118E313C533EA6CBFCE64B3 /* Frameworks */,
+				5A0E1C7D2B043B8CB2263F41A393C269 /* Headers */,
+				113DF1CACB4C33AD51462E9EB74EBF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_watchOS_Framework;
+			productName = Objc_watchOS_Framework;
+			productReference = 344E1858C22E1B8365F7A2905B4234C4 /* Objc_watchOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1F009A9587931856FE90FA038D6F914A /* Swift_iOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DA4185A96AA9AE662F7AC48BCFD35C /* Build configuration list for PBXNativeTarget "Swift_iOS_Framework" */;
+			buildPhases = (
+				A330FC05D96A0DD343168CD23B89435D /* Sources */,
+				D85793F547A9E4184329E7372B835670 /* Frameworks */,
+				C8081DA3A9A5D88325DBAD8F45B0969D /* Headers */,
+				80C5FCE21F965AF309D1903C21294757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_iOS_Framework;
+			productName = Swift_iOS_Framework;
+			productReference = 478B63D46B4D25BE72E88C5BE1FD2CD5 /* Swift_iOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21E51412EA1BE023A7F5BC02B86DA980 /* Swift_watchOS_Native Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D265974A6A22CE126D8698C906138233 /* Build configuration list for PBXNativeTarget "Swift_watchOS_Native Extension" */;
+			buildPhases = (
+				E0363FB810258EC5BA3ED985DFCC1844 /* Sources */,
+				E6FFF4AD7F26D450B8CDD9954BD71CB8 /* Frameworks */,
+				7354D3B392BD3857E52AA40AD0D5A319 /* Resources */,
+				B3FC4B5EE4161BC8DE7904A36A8C2AE5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8972D83A84E3AD17D308B77ADE606B90 /* PBXTargetDependency */,
+			);
+			name = "Swift_watchOS_Native Extension";
+			productName = "Swift_watchOS_Native Extension";
+			productReference = 5A992F6A42E0191E43ECD90F47D2F60E /* Swift_watchOS_Native Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		546E9323B8A4B6DE3E993D894327752B /* OSX_Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483C47A5B8A39ABB9C0F86E3549BFD61 /* Build configuration list for PBXNativeTarget "OSX_Bundle" */;
+			buildPhases = (
+				B707B27C17EB6EC51CACB1EB3684FCA0 /* Sources */,
+				F2B14BF2A211E30B0A651E0D20907AAE /* Frameworks */,
+				2BAF8A15F121B14B175E1B18F5214A84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSX_Bundle;
+			productName = OSX_Bundle;
+			productReference = D46D655695ED8430A38B654793D66F64 /* OSX_Bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		560C0AFE45986824C73989BF361AD574 /* Swift_iOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE891E1BCE774C11567E31720F0DE148 /* Build configuration list for PBXNativeTarget "Swift_iOS_Native" */;
+			buildPhases = (
+				917588C23822B7CBA3CD0B221E69E090 /* Sources */,
+				8F4F60E6125218DF742FF4C30F7A89E5 /* Frameworks */,
+				CCC090DE651B5B719F0FCD5F0AA79E8C /* Resources */,
+				D9355D890E8C9814C013C2CD78AC2292 /* Embed Frameworks */,
+				D694A09AAD1ED276499281DD7962EA1F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9537C78E0B43A1C6CA6041ABB2E9137C /* PBXTargetDependency */,
+				E06A8EE8127029F8D0B6922630699159 /* PBXTargetDependency */,
+			);
+			name = Swift_iOS_Native;
+			productName = Swift_iOS_Native;
+			productReference = BD5BA332A2276241F6D8FC732D751E6E /* Swift_iOS_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6350FEFF421C3B617CEE06E6E09EF66D /* Swift_OSX_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE8803E75F75CCF6B7FF789BFC4EEB2D /* Build configuration list for PBXNativeTarget "Swift_OSX_Native" */;
+			buildPhases = (
+				5D6953EFE70DE69537077A0468842DAC /* Sources */,
+				83BEA305D311E0D23F58A2424114F9E6 /* Frameworks */,
+				CE3C9586343E9899B7F04F0794CE4A8F /* Resources */,
+				134283E7C4E0BCA9B2BD5568BDD5D731 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EBA61A2DA677142D2DA4618006E8D1C /* PBXTargetDependency */,
+			);
+			name = Swift_OSX_Native;
+			productName = Swift_OSX_Native;
+			productReference = 04BCA1F793D4299A997E54A1331CBB76 /* Swift_OSX_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		697D74294AA9DA91DBA80D3F2919F31A /* Objc_iOS_StaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23584B20ECF86DB1FC67F09D43608B74 /* Build configuration list for PBXNativeTarget "Objc_iOS_StaticLibrary" */;
+			buildPhases = (
+				4C05B2D2476BBE92D8A6AAE710FEC349 /* Sources */,
+				2E497FABCE6167EABE6E0C1C6DDDC694 /* Frameworks */,
+				8BFA8FA74DF660C782009666A0EBD38C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_iOS_StaticLibrary;
+			productName = Objc_iOS_StaticLibrary;
+			productReference = 985742B9B199621576508F2CFE6578E9 /* libObjc_iOS_StaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7733F1F7202B2DB30BABC898173B9DF7 /* Swift_watchOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45343EBC5494B490DA948E53EC52731 /* Build configuration list for PBXNativeTarget "Swift_watchOS_Framework" */;
+			buildPhases = (
+				E3988217828DFE84D3A16747AACE5EEB /* Sources */,
+				CAC2AA0602F37D26300AA5AB0F1A5264 /* Frameworks */,
+				93ECE8EFE07342EC410AEAC59F92E03F /* Headers */,
+				929B6DF7D5167CA9EB5C89382750BC65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_watchOS_Framework;
+			productName = Swift_watchOS_Framework;
+			productReference = C4C2DA72FEFBDB7FDF81772BCC78C037 /* Swift_watchOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B94C893F88E9AEE0F6DBD75C7C879C9 /* Objc_OSX_StaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B41A2216E89F0CE6F791C9739391B7 /* Build configuration list for PBXNativeTarget "Objc_OSX_StaticLibrary" */;
+			buildPhases = (
+				D1AC2ACF176EB7499C533648C28AEF2E /* Sources */,
+				5835F3AE8CC21C8E1EEFB10D8E925214 /* Frameworks */,
+				E356780688A6683EBD5DEC798A9AE869 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_OSX_StaticLibrary;
+			productName = Objc_OSX_StaticLibrary;
+			productReference = 8AA4EF93605008568D397FE740DD993B /* libObjc_OSX_StaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7E483ACC5743A2EF0FB7F8CE95FA4E82 /* Objc_OSX_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718A0115B119CFC467FCE3AC95925DE8 /* Build configuration list for PBXNativeTarget "Objc_OSX_Framework" */;
+			buildPhases = (
+				BE17CAC73FE996E7769701165C7272F0 /* Sources */,
+				A424BFD9877A065F9295C9C60106C574 /* Frameworks */,
+				8074320936FE3915F5A90E864C6204BB /* Headers */,
+				B40307586D5F6E2F0871774B9B5B5D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_OSX_Framework;
+			productName = Objc_OSX_Framework;
+			productReference = 77BE6397E93C8819085B4B89D2E1D414 /* Objc_OSX_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8092FFBAF842250C4E73454A5284909F /* Objc_tvOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D42EFFD8C8FA4412F78B109069E1D98 /* Build configuration list for PBXNativeTarget "Objc_tvOS_Native" */;
+			buildPhases = (
+				D9D7B5321AAA88D99823877433C24533 /* Sources */,
+				35FB57B9D19F03C33462A996840C7DAB /* Frameworks */,
+				50A5AC96A9A1248A5CCF3411FA6FFBBA /* Resources */,
+				F1EC85F19242FD5445D3CC8F1C68230F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8231832B331D733EDEB35B95AE008E19 /* PBXTargetDependency */,
+			);
+			name = Objc_tvOS_Native;
+			productName = Objc_tvOS_Native;
+			productReference = 02692FDEA6F510A7F270A6C0D98B7CF4 /* Objc_tvOS_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FD1327326E740AD1E5462D41EBD988D /* Objc_OSX_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05499F75E8585905401831F33AD65C07 /* Build configuration list for PBXNativeTarget "Objc_OSX_Native" */;
+			buildPhases = (
+				069C4D31203A383DEAA3ABE9CAFC3DB3 /* Sources */,
+				4CC93F19C3D2AEBE91B31211269D830B /* Frameworks */,
+				4F10379B30488BF495B0878597F0D11E /* Resources */,
+				53E7EEE4A9825A2862415595FE4C819E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3DE1866293840149188EEEB0075E4E3 /* PBXTargetDependency */,
+			);
+			name = Objc_OSX_Native;
+			productName = Objc_OSX_Native;
+			productReference = 639E30BB585029F543D8F1B9B8105576 /* Objc_OSX_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8357647E4885D4DC3D7EF385EC050D2 /* Objc_watchOS_StaticLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A699897F46D20C9023DC2A839A93A8E4 /* Build configuration list for PBXNativeTarget "Objc_watchOS_StaticLibrary" */;
+			buildPhases = (
+				7418267E29E23A993947373BF5F95CFA /* Sources */,
+				F1A1436691489C2A7296BABF32B46511 /* Frameworks */,
+				1EEC01BA04912D53ED31D4AEC5E185FD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_watchOS_StaticLibrary;
+			productName = Objc_watchOS_StaticLibrary;
+			productReference = 0E942524EB158573411B5C746E3122B4 /* libObjc_watchOS_StaticLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C4029584B15356AFCF3BF143B510D3B2 /* Objc_watchOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C43D991DF290CEA521091CA8A8BDE1E /* Build configuration list for PBXNativeTarget "Objc_watchOS_Native" */;
+			buildPhases = (
+				9CE96977E96F99DCAAF9A653C0DA6CB9 /* Resources */,
+				A89129A028C683D19D714F4C593B3843 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA01AC274E07CF99BE2C0C7CFCB27F44 /* PBXTargetDependency */,
+			);
+			name = Objc_watchOS_Native;
+			productName = Objc_watchOS_Native;
+			productReference = AD0BE61D7680A959CF96EC969643F203 /* Objc_watchOS_Native.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D002107E82EAE8266D32C052062A831D /* Swift_tvOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF701EB8D6955FA7A77480BA8F05A6B9 /* Build configuration list for PBXNativeTarget "Swift_tvOS_Native" */;
+			buildPhases = (
+				996714C188FFE81F66B6338858216703 /* Sources */,
+				C6ACF310D4D29636634F51173DD961F3 /* Frameworks */,
+				78C3DF3EA804D75FA2B2E9BFAD5D7D55 /* Resources */,
+				D241894A6586BACF5DBFA3EFB5A2CD19 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A3950EC874E413278881677250BD72E /* PBXTargetDependency */,
+			);
+			name = Swift_tvOS_Native;
+			productName = Swift_tvOS_Native;
+			productReference = AD75EFD11F8472B430C69BC30A23D38A /* Swift_tvOS_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0F4C96EA9CA39F64E1F1EE9E5EFC9BB /* Objc_iOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8C595229DAA88B60709A5CE15E3534 /* Build configuration list for PBXNativeTarget "Objc_iOS_Framework" */;
+			buildPhases = (
+				0F53A17A8D86D9133B187B1F7AE05AF5 /* Sources */,
+				33859BB17AFAD9C730BD9F78F9ABF55D /* Frameworks */,
+				C2CFBCAB2FE97DB0951F3598687ADF91 /* Headers */,
+				A7BFE89B84CDB9BD73B76586988AB987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_iOS_Framework;
+			productName = Objc_iOS_Framework;
+			productReference = 9A10836B3917BB024DE2F3C8BD7B6158 /* Objc_iOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D76CF5929FD2BF51D5E1BDB4E7C568E3 /* Objc_OSX_DynamicLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4D7215A3150C32A449524108040C74 /* Build configuration list for PBXNativeTarget "Objc_OSX_DynamicLibrary" */;
+			buildPhases = (
+				54E13B67BB917FEAB096AAB868EC299F /* Sources */,
+				616498FD14DF026239D9E7FCBED9AEBC /* Frameworks */,
+				301DE51EC5E7676CB7FD3179695CDE5D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_OSX_DynamicLibrary;
+			productName = Objc_OSX_DynamicLibrary;
+			productReference = 86387DF86B8300D977BC3DFF4998BC79 /* libObjc_OSX_DynamicLibrary.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DA1DD8D75AE4B4E21DF860C375ADB938 /* Objc_tvOS_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0ADA1685B105D3E85C856AF328B4DF /* Build configuration list for PBXNativeTarget "Objc_tvOS_Framework" */;
+			buildPhases = (
+				5A1FFD9D70B672B3B6F0DFA2A77D47FC /* Sources */,
+				07A07377D2A64D9B37B32FE6F3E2F0E5 /* Frameworks */,
+				5A4D2CF38A394DC2246BC1824771ED10 /* Headers */,
+				E962BA3619B24246B58E2F93C9173EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Objc_tvOS_Framework;
+			productName = Objc_tvOS_Framework;
+			productReference = 687160C8BA537E0DF8499E81531312E2 /* Objc_tvOS_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA4DF87D2595D185221AF6C9A00010C2 /* Objc_iOS_Native */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C72785FA6D4BC853831EEAB622538B5 /* Build configuration list for PBXNativeTarget "Objc_iOS_Native" */;
+			buildPhases = (
+				1900881D6E91BA9380290060D32184D0 /* Sources */,
+				5B9A573F77ED74F9FF4BABD30D554011 /* Frameworks */,
+				A76276E1501290087EE255FEE0889AD1 /* Resources */,
+				EB6A1FB4CC17F499E40794A196230F83 /* Embed Frameworks */,
+				DF9634866A7D7A525B610FDCD71F6F17 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				280156BE85AB950593A569FBFAD48513 /* PBXTargetDependency */,
+				C9335D6D12168FA3EAA96B8A39000DDB /* PBXTargetDependency */,
+			);
+			name = Objc_iOS_Native;
+			productName = Objc_iOS_Native;
+			productReference = 1D55F664949F8794CA24F1EDB813EB08 /* Objc_iOS_Native.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2C8BD51A61C2FC8F1121FF86375BB1E /* Objc_watchOS_Native Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A771A919DD2F1BA277B78EFF4F2332B9 /* Build configuration list for PBXNativeTarget "Objc_watchOS_Native Extension" */;
+			buildPhases = (
+				6466B253E034B4D2ECFC25F5A5A12E6E /* Sources */,
+				3A81EDD0B8C9B8E94F98762EAAFAC99D /* Frameworks */,
+				A417052F61F41FBF465B7E1666A47584 /* Resources */,
+				342C9C9563C58AEB21B747BF09D4B3F1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC31C98AC89459EE70454281B71BD863 /* PBXTargetDependency */,
+			);
+			name = "Objc_watchOS_Native Extension";
+			productName = "Objc_watchOS_Native Extension";
+			productReference = A359A9C84746447CF182EEB04C0CCFE4 /* Objc_watchOS_Native Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		F8E7D040DFCC7B409C8D073CF903015E /* Swift_OSX_Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D77B8E7F83755B8012987DBB5C05E78 /* Build configuration list for PBXNativeTarget "Swift_OSX_Framework" */;
+			buildPhases = (
+				F1818E74D3C096115EBFA7BDC74C2D6E /* Sources */,
+				6F658E059CADAEF6BA4DB31B7CCD40D2 /* Frameworks */,
+				2417BBDBE2B000D542C9D85735810EFD /* Headers */,
+				0FC49A2F3CFB7802C01E71E0DD974B69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_OSX_Framework;
+			productName = Swift_OSX_Framework;
+			productReference = 975267591BD3F99806D1212900AEEC14 /* Swift_OSX_Framework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					C069DB331EE9D7E200E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DB501EE9D7EC00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DB691EE9D81F00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DB7B1EE9D82B00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DB8C1EE9D83B00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DB991EE9D84700E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DBB11EE9D85300E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DBC61EE9D86200E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DBD81EE9D86F00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DBE91EE9D87F00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DBF61EE9D88C00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC031EE9D8A000E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC0B1EE9D8B100E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC171EE9D8B100E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC361EE9D8C000E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC421EE9D8C000E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC611EE9D8D200E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC851EE9D8EC00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DC951EE9D8F700E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DCA21EE9D90600E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DCB91EE9D90E00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DCCD1EE9D91900E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DCDF1EE9D92500E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					C069DCF01EE9D92E00E970A7 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 192C0DF49E4050B0710A9EE033CAFA9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0F4C96EA9CA39F64E1F1EE9E5EFC9BB /* Objc_iOS_Framework */,
+				DA4DF87D2595D185221AF6C9A00010C2 /* Objc_iOS_Native */,
+				697D74294AA9DA91DBA80D3F2919F31A /* Objc_iOS_StaticLibrary */,
+				D76CF5929FD2BF51D5E1BDB4E7C568E3 /* Objc_OSX_DynamicLibrary */,
+				7E483ACC5743A2EF0FB7F8CE95FA4E82 /* Objc_OSX_Framework */,
+				9FD1327326E740AD1E5462D41EBD988D /* Objc_OSX_Native */,
+				7B94C893F88E9AEE0F6DBD75C7C879C9 /* Objc_OSX_StaticLibrary */,
+				DA1DD8D75AE4B4E21DF860C375ADB938 /* Objc_tvOS_Framework */,
+				8092FFBAF842250C4E73454A5284909F /* Objc_tvOS_Native */,
+				16002996B7E58D444156280C54103F87 /* Objc_tvOS_StaticLibrary */,
+				1C5F00D6FFCED8D6821E76555AB722E0 /* Objc_watchOS_Framework */,
+				C4029584B15356AFCF3BF143B510D3B2 /* Objc_watchOS_Native */,
+				E2C8BD51A61C2FC8F1121FF86375BB1E /* Objc_watchOS_Native Extension */,
+				B8357647E4885D4DC3D7EF385EC050D2 /* Objc_watchOS_StaticLibrary */,
+				546E9323B8A4B6DE3E993D894327752B /* OSX_Bundle */,
+				1F009A9587931856FE90FA038D6F914A /* Swift_iOS_Framework */,
+				560C0AFE45986824C73989BF361AD574 /* Swift_iOS_Native */,
+				F8E7D040DFCC7B409C8D073CF903015E /* Swift_OSX_Framework */,
+				6350FEFF421C3B617CEE06E6E09EF66D /* Swift_OSX_Native */,
+				17AF55CFB0BBBB7B76815D6539596050 /* Swift_tvOS_Framework */,
+				D002107E82EAE8266D32C052062A831D /* Swift_tvOS_Native */,
+				7733F1F7202B2DB30BABC898173B9DF7 /* Swift_watchOS_Framework */,
+				17E874872A495E54FAA0B94B4DF5547B /* Swift_watchOS_Native */,
+				21E51412EA1BE023A7F5BC02B86DA980 /* Swift_watchOS_Native Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0078C6C5EA58167D2CD35220A05ACEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FC49A2F3CFB7802C01E71E0DD974B69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113DF1CACB4C33AD51462E9EB74EBF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAF8A15F121B14B175E1B18F5214A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F10379B30488BF495B0878597F0D11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B036FCED8BC09089F5069E877F76CE0 /* Assets.xcassets in Resources */,
+				0A760D5AFE005099436C3FB4962A2A7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50A5AC96A9A1248A5CCF3411FA6FFBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E4B3D77E2AE6D67D4F214F0D14B11F /* Assets.xcassets in Resources */,
+				2CA7167A9BBB36CF5D196E7139006A89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7354D3B392BD3857E52AA40AD0D5A319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FB8EDF98EF378B230BF423EFDCE93A4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C3DF3EA804D75FA2B2E9BFAD5D7D55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A236F36AB5C9D1A5D2B070F0497AB02 /* Assets.xcassets in Resources */,
+				DAA797B83CCF8B9D7C32F9CF44924050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C5FCE21F965AF309D1903C21294757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929B6DF7D5167CA9EB5C89382750BC65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE96977E96F99DCAAF9A653C0DA6CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA40E13416F63BFC0A305F402CE67788 /* Assets.xcassets in Resources */,
+				8DB14DB4727FE25E017288433A191AA3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A417052F61F41FBF465B7E1666A47584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337CFF10C480AB28584B74EB2D692C27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76276E1501290087EE255FEE0889AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA73FCEE5DA33549937E1DCB7A774EAE /* Assets.xcassets in Resources */,
+				5222E782238C88AD19A4276D51673D24 /* LaunchScreen.storyboard in Resources */,
+				14EA69C544BB6DB287B9EB0132B94F7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BFE89B84CDB9BD73B76586988AB987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B40307586D5F6E2F0871774B9B5B5D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC090DE651B5B719F0FCD5F0AA79E8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7AB10CFF30559FE31B19FBDBE49058 /* Assets.xcassets in Resources */,
+				ABA2A87E82AA74B9C1824587A1F547F8 /* LaunchScreen.storyboard in Resources */,
+				B2FAF45904611E6AB066845522F8B813 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3C9586343E9899B7F04F0794CE4A8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335B82AC5163767EA465A4A85F354CB4 /* Assets.xcassets in Resources */,
+				5B777BC3DAE5138A7D6482FF37000181 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0DA1A5B8EA5C565CB9AE829DAA90E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830A5782D0D317F31FE10DA572D5F627 /* Assets.xcassets in Resources */,
+				270675092594F8990B7D57847B429D84 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E962BA3619B24246B58E2F93C9173EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		069C4D31203A383DEAA3ABE9CAFC3DB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E41F418BF72BD767F1825F22FB5DCE /* AppDelegate.m in Sources */,
+				D96AE5D826688FDF743F185460A33714 /* main.m in Sources */,
+				22A1EAA66B0B3B26809DC467D64F564E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0719E26D9760CA8D7B7397B8F8E069AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DD543F396253AE2E2B9CAD04643FC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65EF8A1858F43EB631DB56D935F985A /* Objc_tvOS_StaticLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F53A17A8D86D9133B187B1F7AE05AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1900881D6E91BA9380290060D32184D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B4AE11FC859856ABB23B64C935AEF6E /* AppDelegate.m in Sources */,
+				462B62F20F53090CD9FE340DB2912D55 /* DetailViewController.m in Sources */,
+				4F8A4792877C9D60AF256B689975E211 /* main.m in Sources */,
+				1EE215D89D573F63C555023B6480A9A0 /* MasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C05B2D2476BBE92D8A6AAE710FEC349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB67175675F09F31D0DAA2712111999 /* Objc_iOS_StaticLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E13B67BB917FEAB096AAB868EC299F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FA46F5913A09D07A7C6BEA47ADAC0F /* Objc_OSX_DynamicLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A1FFD9D70B672B3B6F0DFA2A77D47FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6953EFE70DE69537077A0468842DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				615B7DA2AB1FF4533B7E3E320FF284D1 /* AppDelegate.swift in Sources */,
+				9039FF3054C87B1093A4775F6B8CE654 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6466B253E034B4D2ECFC25F5A5A12E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93691A5E91D5C476BCB5D451FD98B882 /* ExtensionDelegate.m in Sources */,
+				D5B012EE82984B02AE6BE84AE68BCD26 /* InterfaceController.m in Sources */,
+				6CD4D4F94EE1C719025476D430C26B01 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7418267E29E23A993947373BF5F95CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11917789B7B7A08DFBD005E1478C1C14 /* Objc_watchOS_StaticLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917588C23822B7CBA3CD0B221E69E090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF1D15785C3A099736A136D13B4FA61 /* AppDelegate.swift in Sources */,
+				6D216C8C882CA495C1C020C5C59B2017 /* DetailViewController.swift in Sources */,
+				9E86CE189CEC74CC9A14A900F617996D /* MasterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		996714C188FFE81F66B6338858216703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD020AA420EAF77E643EAA9D9B30DA21 /* AppDelegate.swift in Sources */,
+				7DAE2897ED4655274FE15959F1299ADB /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A330FC05D96A0DD343168CD23B89435D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B707B27C17EB6EC51CACB1EB3684FCA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA9F22FAFB5B44EA7FA4578A1B1755A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE17CAC73FE996E7769701165C7272F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AC2ACF176EB7499C533648C28AEF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F7652D4C88A27E63990848C18F6A82 /* Objc_OSX_StaticLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9D7B5321AAA88D99823877433C24533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04595E2D561AB531AF9C216F4FF80945 /* AppDelegate.m in Sources */,
+				DD19360376E65BEC1BF40F0567CD8DFC /* main.m in Sources */,
+				BDCC0B41542B0DBDF442A9172E288C54 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0363FB810258EC5BA3ED985DFCC1844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1DA9E5614F598EB72BF034CFDE05E2 /* ExtensionDelegate.swift in Sources */,
+				CADA14D529F9FA43C700665B73EEFC14 /* InterfaceController.swift in Sources */,
+				BC0A636C17368BD8F800CEEBB8F0646E /* NotificationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3988217828DFE84D3A16747AACE5EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1818E74D3C096115EBFA7BDC74C2D6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		280156BE85AB950593A569FBFAD48513 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F4C96EA9CA39F64E1F1EE9E5EFC9BB /* Objc_iOS_Framework */;
+			targetProxy = D11F9F995DBDEC4EEA1FC74158E0AB98 /* PBXContainerItemProxy */;
+		};
+		3A3950EC874E413278881677250BD72E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17AF55CFB0BBBB7B76815D6539596050 /* Swift_tvOS_Framework */;
+			targetProxy = D860BDC2684EFC9C8BDC6CA7A8A740DC /* PBXContainerItemProxy */;
+		};
+		4EBA61A2DA677142D2DA4618006E8D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E7D040DFCC7B409C8D073CF903015E /* Swift_OSX_Framework */;
+			targetProxy = D70567F08D778DDF3E26926314999A98 /* PBXContainerItemProxy */;
+		};
+		8231832B331D733EDEB35B95AE008E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA1DD8D75AE4B4E21DF860C375ADB938 /* Objc_tvOS_Framework */;
+			targetProxy = BCF41F0C79C9FA1BAF968B7982C02944 /* PBXContainerItemProxy */;
+		};
+		8972D83A84E3AD17D308B77ADE606B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7733F1F7202B2DB30BABC898173B9DF7 /* Swift_watchOS_Framework */;
+			targetProxy = 07D7100B412112DE94D096E220CD4D7E /* PBXContainerItemProxy */;
+		};
+		9537C78E0B43A1C6CA6041ABB2E9137C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F009A9587931856FE90FA038D6F914A /* Swift_iOS_Framework */;
+			targetProxy = 8A796C8C4848002DA74A2751BB86C14A /* PBXContainerItemProxy */;
+		};
+		A3DE1866293840149188EEEB0075E4E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E483ACC5743A2EF0FB7F8CE95FA4E82 /* Objc_OSX_Framework */;
+			targetProxy = 5428C446B190FCE1FCB2A0E4C0B1BFE0 /* PBXContainerItemProxy */;
+		};
+		AA01AC274E07CF99BE2C0C7CFCB27F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2C8BD51A61C2FC8F1121FF86375BB1E /* Objc_watchOS_Native Extension */;
+			targetProxy = DA1C18F56A7EA280780FD92B7C7AFF6A /* PBXContainerItemProxy */;
+		};
+		C9335D6D12168FA3EAA96B8A39000DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4029584B15356AFCF3BF143B510D3B2 /* Objc_watchOS_Native */;
+			targetProxy = 7542A5161CFD534F3882F22137DE505B /* PBXContainerItemProxy */;
+		};
+		CC4694D219F56C2DAEEB21C5BCABF6EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E51412EA1BE023A7F5BC02B86DA980 /* Swift_watchOS_Native Extension */;
+			targetProxy = 3756ADD9885AE307E5FD790B40B22E59 /* PBXContainerItemProxy */;
+		};
+		DC31C98AC89459EE70454281B71BD863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C5F00D6FFCED8D6821E76555AB722E0 /* Objc_watchOS_Framework */;
+			targetProxy = 25004F91868B2BD176607AF5BDBA22BE /* PBXContainerItemProxy */;
+		};
+		E06A8EE8127029F8D0B6922630699159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17E874872A495E54FAA0B94B4DF5547B /* Swift_watchOS_Native */;
+			targetProxy = 84E04089E7256BE598E1EE9B10446A02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		104EE3D74D28A79C4BF72661161D1506 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64DAAF142E8081AF6A6998F2EC876080 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		40A6FA3ED1A6440386E8F57E9D0B8E84 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48B3F4A88F1353AD2D2EEE64D929103F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		414940C2A45A31D4E7691AFADAF75323 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27961BB2E56A364312179C0093C25532 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A260DE7BF069F7F314DE11314D62CAA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4C83FE3C6B17C910111F2C81F02939C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		864AC0AE15A2D978D65305AEA506F713 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				785C3CB209A890B26C7A883BC401D3CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B5B399022046D252E13C5D5549D6715 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84EE831FD7239A741A0003E21FC3EFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C6274B8E0B063D779C48AE3EFBB7212C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C93FD405817A89E1E17D492A20A9F8DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFF479BFA135CFC3924586A76DA7064C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C87B7AFD8D74D07B6BD22441F46369F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9FA7A426FF4E3152603375C8E80B2E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B6F6F19F193EFD815E92FA253D1F94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F47F93023B15076325C7D7514994EC96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AACEF012821CB115ED389E59C2A3E92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01CCE7B0455CA72A6A4C2E6AEE93FFF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		03B51FA85B207946746BE9D85223889D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Swift_watchOS_Native Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Native.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		05CF419325786866D1A3631D0E86A675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		0C67B923A70126CC45CD9973203D0E8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_OSX_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-OSX-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10F4FC7D61269ECA7598C019FA587318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Objc_OSX_Native/Objc_OSX_Native.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_OSX_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-OSX-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		143F5E412EF5FF9C1EBCBD33138D441A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_watchOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-watchOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		171DB9D954A61193BCC84B91DF4DC296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17357030C107B83ABD142CD1365D6E89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Swift_OSX_Native/Swift_OSX_Native.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_OSX_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-OSX-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1F4A95F8E79E9FF5CAC377B0005CCC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_tvOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-tvOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AC338D68B0162A4003A3DB167142DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		312C4EF96E2808AC57932BA8132C95DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = OSX_Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.OSX-Bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		31DC431B233298EB7FA4016C609E0EB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Objc_OSX_Native/Objc_OSX_Native.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_OSX_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-OSX-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		36234681BF68CD13407363F4E0665356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Swift_OSX_Native/Swift_OSX_Native.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_OSX_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-OSX-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3669F07C81E335AE9A74189B484E934B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_OSX_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-OSX-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C4A1A21F096B9085A3D25BF5CFDAF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_tvOS_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-tvOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		3E912DAD912E64FFFC187AE32782D765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_tvOS_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-tvOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		48328560180128FC45F87ED6F1151638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_watchOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-watchOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		51F15E0CEF38B304B2BE863189326027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_OSX_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-OSX-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D96EAED12A5AFFC1F2DA8EB5D4CF489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_tvOS_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-tvOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		5ED8A3E150CFB38334D6E5B34CB78638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_iOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		610CB39BCC696FF8B73B79B085B5C4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Swift_watchOS_Native Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Native.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		618E721744EBEF9325AA23A26A12683D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_watchOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-watchOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		653F7A817BE7FE5B7F64CDB1D462BEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = Swift_watchOS_Native_Extension;
+				INFOPLIST_FILE = Swift_watchOS_Native/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Native.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		6CE6DAED438A469928B09B117CDC5610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_iOS_Native/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F80BB9440B2B673D709C0C7E3D384BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C6BCE6195570A9D399D01030879B8F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_tvOS_Native/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-tvOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		7CB2140227E844EB3AEBE75A9E61074B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = Swift_watchOS_Native_Extension;
+				INFOPLIST_FILE = Swift_watchOS_Native/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Native.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		7E43A41378B5CE923864AB0240526F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_watchOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-watchOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		852CBD02C01FA2986466E9576FE5B8C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_tvOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-tvOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5EEFCF9B9FC43F2BDB1294F10C7C9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_iOS_Native/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94CCB1A4CCE57C10E05BE94D239E4256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		985A74B7CAB6FAED1AF4944F428A4017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = Objc_watchOS_Native_Extension;
+				INFOPLIST_FILE = Objc_watchOS_Native/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Native.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		9A3DDB65C671AEE054A5B080C2F37062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_iOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A99D04134C569135A1F79FAC0BE2A436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Objc_watchOS_Native Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Native.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		AAC31743D47D253B84D3D20758B4BDC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = Objc_watchOS_Native_Extension;
+				INFOPLIST_FILE = Objc_watchOS_Native/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Native.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B925821008F25D3E05B4977AF0EA483D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Objc_watchOS_Native Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Native.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		C842842EA6249F97F8E13529EE0B1373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C8C7B9C50E79088BAAA00FECAA22D3DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C94C82992744899574D701FF3E7194C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_iOS_Native/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-iOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC1118BC3BCD943282F6750B2CB433C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_OSX_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-OSX-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD4AE83FCFBB248214D0D4699561D619 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = OSX_Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.OSX-Bundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CE0D72861E9F55BEF24798C04D622370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		CEB9A575D04261656378AE0B030BAE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		D03E83D6C8CDEC57A5ED4F1F0A78C4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Swift_tvOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Swift-tvOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D782BDF713046B0B7214FDFA7CF0C374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_tvOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-tvOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E363AA5B00CB28F5721709E4E16DF98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E6B5FC8DF9A1DF84EB12C4D825A63AA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E92BBA8D53233926615E1200630196D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_iOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F80019B6E63669D339574DF8F4366CB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_iOS_Native/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Native";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDF5EF5DCCBB25A8936A4C10E5416EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Objc_iOS_Framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Objc-iOS-Framework";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05499F75E8585905401831F33AD65C07 /* Build configuration list for PBXNativeTarget "Objc_OSX_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10F4FC7D61269ECA7598C019FA587318 /* Debug */,
+				31DC431B233298EB7FA4016C609E0EB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		06B41A2216E89F0CE6F791C9739391B7 /* Build configuration list for PBXNativeTarget "Objc_OSX_StaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B5FC8DF9A1DF84EB12C4D825A63AA5 /* Debug */,
+				E363AA5B00CB28F5721709E4E16DF98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C43D991DF290CEA521091CA8A8BDE1E /* Build configuration list for PBXNativeTarget "Objc_watchOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC31743D47D253B84D3D20758B4BDC8 /* Debug */,
+				985A74B7CAB6FAED1AF4944F428A4017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		20EA4B434D7111CFB5D27BBC036B26AE /* Build configuration list for PBXNativeTarget "Objc_tvOS_StaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB9A575D04261656378AE0B030BAE21 /* Debug */,
+				2AC338D68B0162A4003A3DB167142DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		23584B20ECF86DB1FC67F09D43608B74 /* Build configuration list for PBXNativeTarget "Objc_iOS_StaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171DB9D954A61193BCC84B91DF4DC296 /* Debug */,
+				C8C7B9C50E79088BAAA00FECAA22D3DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D42EFFD8C8FA4412F78B109069E1D98 /* Build configuration list for PBXNativeTarget "Objc_tvOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6BCE6195570A9D399D01030879B8F7 /* Debug */,
+				3C4A1A21F096B9085A3D25BF5CFDAF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C842842EA6249F97F8E13529EE0B1373 /* Debug */,
+				6F80BB9440B2B673D709C0C7E3D384BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483C47A5B8A39ABB9C0F86E3549BFD61 /* Build configuration list for PBXNativeTarget "OSX_Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				312C4EF96E2808AC57932BA8132C95DE /* Debug */,
+				CD4AE83FCFBB248214D0D4699561D619 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C72785FA6D4BC853831EEAB622538B5 /* Build configuration list for PBXNativeTarget "Objc_iOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80019B6E63669D339574DF8F4366CB1 /* Debug */,
+				8B5EEFCF9B9FC43F2BDB1294F10C7C9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D77B8E7F83755B8012987DBB5C05E78 /* Build configuration list for PBXNativeTarget "Swift_OSX_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F15E0CEF38B304B2BE863189326027 /* Debug */,
+				CC1118BC3BCD943282F6750B2CB433C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4F0ADA1685B105D3E85C856AF328B4DF /* Build configuration list for PBXNativeTarget "Objc_tvOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D782BDF713046B0B7214FDFA7CF0C374 /* Debug */,
+				1F4A95F8E79E9FF5CAC377B0005CCC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6FCC02E5922108983E2C2EC7BE644C04 /* Build configuration list for PBXNativeTarget "Swift_tvOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852CBD02C01FA2986466E9576FE5B8C8 /* Debug */,
+				D03E83D6C8CDEC57A5ED4F1F0A78C4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		718A0115B119CFC467FCE3AC95925DE8 /* Build configuration list for PBXNativeTarget "Objc_OSX_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3669F07C81E335AE9A74189B484E934B /* Debug */,
+				0C67B923A70126CC45CD9973203D0E8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		77CD5782E61EA49940744004132FB867 /* Build configuration list for PBXNativeTarget "Swift_watchOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653F7A817BE7FE5B7F64CDB1D462BEAF /* Debug */,
+				7CB2140227E844EB3AEBE75A9E61074B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A699897F46D20C9023DC2A839A93A8E4 /* Build configuration list for PBXNativeTarget "Objc_watchOS_StaticLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05CF419325786866D1A3631D0E86A675 /* Debug */,
+				CE0D72861E9F55BEF24798C04D622370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A771A919DD2F1BA277B78EFF4F2332B9 /* Build configuration list for PBXNativeTarget "Objc_watchOS_Native Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99D04134C569135A1F79FAC0BE2A436 /* Debug */,
+				B925821008F25D3E05B4977AF0EA483D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE8803E75F75CCF6B7FF789BFC4EEB2D /* Build configuration list for PBXNativeTarget "Swift_OSX_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17357030C107B83ABD142CD1365D6E89 /* Debug */,
+				36234681BF68CD13407363F4E0665356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB4D7215A3150C32A449524108040C74 /* Build configuration list for PBXNativeTarget "Objc_OSX_DynamicLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94CCB1A4CCE57C10E05BE94D239E4256 /* Debug */,
+				01CCE7B0455CA72A6A4C2E6AEE93FFF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0DA4185A96AA9AE662F7AC48BCFD35C /* Build configuration list for PBXNativeTarget "Swift_iOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A3DDB65C671AEE054A5B080C2F37062 /* Debug */,
+				5ED8A3E150CFB38334D6E5B34CB78638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB4F796827E8F432B2178D9F9E288D37 /* Build configuration list for PBXNativeTarget "Objc_watchOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143F5E412EF5FF9C1EBCBD33138D441A /* Debug */,
+				48328560180128FC45F87ED6F1151638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D265974A6A22CE126D8698C906138233 /* Build configuration list for PBXNativeTarget "Swift_watchOS_Native Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610CB39BCC696FF8B73B79B085B5C4C1 /* Debug */,
+				03B51FA85B207946746BE9D85223889D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF701EB8D6955FA7A77480BA8F05A6B9 /* Build configuration list for PBXNativeTarget "Swift_tvOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E912DAD912E64FFFC187AE32782D765 /* Debug */,
+				5D96EAED12A5AFFC1F2DA8EB5D4CF489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F45343EBC5494B490DA948E53EC52731 /* Build configuration list for PBXNativeTarget "Swift_watchOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618E721744EBEF9325AA23A26A12683D /* Debug */,
+				7E43A41378B5CE923864AB0240526F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB8C595229DAA88B60709A5CE15E3534 /* Build configuration list for PBXNativeTarget "Objc_iOS_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF5EF5DCCBB25A8936A4C10E5416EBF /* Debug */,
+				E92BBA8D53233926615E1200630196D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE891E1BCE774C11567E31720F0DE148 /* Build configuration list for PBXNativeTarget "Swift_iOS_Native" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94C82992744899574D701FF3E7194C2 /* Debug */,
+				6CE6DAED438A469928B09B117CDC5610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

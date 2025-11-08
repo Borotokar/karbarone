@@ -1,0 +1,2 @@
+#include "Objc_tvOS_Native/Objc_tvOS_Native_base.xcconfig"
+VALIDATE_PRODUCT = YES
