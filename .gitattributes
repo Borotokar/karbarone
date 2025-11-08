@@ -1,0 +1,19 @@
+# Handle merge conflicts for Xcode projects
+ios/Runner.xcodeproj/project.pbxproj merge=union
+ios/Runner.xcworkspace/contents.xcworkspacedata merge=union
+
+# Treat binary files as binary (e.g., images, assets)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.xcassets binary
+*.storyboard binary
+*.xib binary
+
+# Normalize line endings (LF for all text files)
+* text=auto eol=lf
+
+# Exclude some files from diff (optional, for large binaries)
+*.xcuserdata text eol=lf -diff
+.DS_Store binary
