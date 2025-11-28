@@ -34,7 +34,7 @@ jobs:
           cd ..
           zip -r -9 app.ipa Payload
       - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
