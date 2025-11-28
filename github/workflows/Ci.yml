@@ -20,21 +20,31 @@ jobs:
           java-version: '17'
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.0'
           channel: 'stable'
+          architecture: x64
       - run: flutter pub get
-      - run: flutter clean
+
+      - run: Pod repo update
+        working-directory: ios
       - name: Build ios App
-        run: |
-          flutter build ios --no-codesign
-          cd build/ios/iphoneos
-          mkdir Payload
-          cd Payload
-          In -s ../Runner.app
-          cd ..
-          zip -r -9 app.ipa Payload
-      - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v3
+      - run: flutter build ios --release --no-codesign
+
+      - run: mkdir Payload
+      working-directory: build/ios/iphoneos
+
+      - run: mv Runner.app/ Payload
+        working-directory: build/ios/iphoneos
+
+      - name: Zip output
+        run: zip -qq -r -9 FlutterIpaExport.ipa Payload
+        working-directory: build/ios/iphoneos
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
         with:
-          name: ios-app
-          path: build/ios/iphoneos/app.ipa
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/ios/iphoneos/FlutterIpaExport.ipa
+          tag: v1.0
+          overwrite: true
+          body: "This is first release"
+
