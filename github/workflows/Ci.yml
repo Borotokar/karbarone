@@ -1,0 +1,40 @@
+name: Ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_iosApp:
+    name: Build Flutter App (ios)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.19.0'
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter clean
+      - name: Build ios App
+        run: |
+          flutter build ios --no-codesign
+          cd build/ios/iphoneos
+          mkdir Payload
+          cd Payload
+          In -s ../Runner.app
+          cd ..
+          zip -r -9 app.ipa Payload
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ios-app
+          path: build/ios/iphoneos/app.ipa
