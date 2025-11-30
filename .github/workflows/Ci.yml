@@ -10,6 +10,59 @@ on:
 
 jobs:
   build_iosApp:
+    name: Build Flutter App (iOS)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.3'
+          channel: 'stable'
+
+      - name: Install Dart/Flutter dependencies
+        run: flutter pub get
+
+      - name: Clean build
+        run: flutter clean
+
+      - name: Install CocoaPods
+        run: |
+          cd ios
+          pod install --repo-update
+
+      - name: Build iOS app and package IPA
+        run: |
+          flutter build ios --no-codesign
+          cd build/ios/iphoneos
+          mkdir -p Payload
+          # copy the built app into the Payload directory (don't use a symlink)
+          cp -r Runner.app Payload/
+          # create the .ipa (zip with proper structure)
+          zip -r -9 app.ipa Payload
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-app
+          path: build/ios/iphoneos/app.ipa
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_iosApp:
     name: Build Flutter App (ios)
     runs-on: macos-latest
     steps:
@@ -45,5 +98,6 @@ jobs:
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
+
 
 
