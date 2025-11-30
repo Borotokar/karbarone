@@ -24,6 +24,12 @@ jobs:
           channel: 'stable'
       - run: flutter pub get
       - run: flutter clean
+      - name: Clean and Reinstall Pods
+        run: |
+          cd ios
+          rm -rf Pods
+          rm -f Podfile.lock
+          pod install --repo-update
       - name: Build ios App
         run: |
          flutter build ios --no-codesign
@@ -38,3 +44,4 @@ jobs:
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
+
