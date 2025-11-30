@@ -25,11 +25,12 @@ jobs:
       - run: flutter pub get
       - run: flutter clean
       - name: Build ios App
-        run: flutter build ios --no-codesign
+        run: |
+         flutter build ios --no-codesign
           cd build/ios/iphoneos
           mkdir Payload
           cd Payload
-          In -s ../Runner.app
+          In -s ../../../Runner.app .
           cd ..
           zip -r -9 app.ipa Payload
       - name: Upload IPA Artifact
