@@ -15,20 +15,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.38.3'
           channel: 'stable'
 
+      - name: Run Flutter Doctor
+        run: flutter doctor -v
+
       - name: Install Dart/Flutter dependencies
         run: flutter pub get
+
+      - name: Analyze code
+        run: flutter analyze
 
       - name: Clean build
         run: flutter clean
@@ -55,4 +55,3 @@ jobs:
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
-
