@@ -36,6 +36,8 @@ jobs:
       - name: Install CocoaPods
         run: |
           cd ios
+          rm -rf Pods
+          rm -f Podfile.lock
           pod install --repo-update
 
       - name: Build iOS app and package IPA
@@ -53,3 +55,4 @@ jobs:
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
+
