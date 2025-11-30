@@ -26,6 +26,7 @@ jobs:
       - run: flutter clean
       - name: Clean and Reinstall Pods
         run: |
+          flutter pub get
           cd ios
           rm -rf Pods
           rm -f Podfile.lock
@@ -44,4 +45,5 @@ jobs:
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
+
 
