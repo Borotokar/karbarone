@@ -1,56 +1,37 @@
-name: CI
-
+name: Build iOS IPA
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  build_iosApp:
-    name: Build Flutter App (iOS)
+  build-ios:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Flutter
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-
-      - name: Run Flutter Doctor
-        run: flutter doctor -v
-
-      - name: Install Dart/Flutter dependencies
+      
+      - name: Install dependencies
         run: flutter pub get
-
-      - name: Analyze code
-        run: flutter analyze
-
-      - name: Clean build
-        run: flutter clean
-
-      - name: Install CocoaPods
+      
+      - name: Build iOS (no codesign)
+        run: flutter build ios --release --no-codesign
+      
+      - name: Create IPA
         run: |
-          cd ios
-          rm -rf Pods
-          rm -f Podfile.lock
-          pod install --repo-update
-
-      - name: Build iOS app and package IPA
-        run: |
-          flutter build ios --no-codesign
           cd build/ios/iphoneos
-          mkdir -p Payload
-          # copy the built app into the Payload directory (don't use a symlink)
+          mkdir Payload
           cp -r Runner.app Payload/
-          # create the .ipa (zip with proper structure)
-          zip -r -9 app.ipa Payload
-
-      - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v4
+          zip -r app.ipa Payload
+      
+      - name: Upload IPA
+        uses: actions/upload-artifact@v3
         with:
-          name: ios-app
+          name: ios-ipa
           path: build/ios/iphoneos/app.ipa
+
