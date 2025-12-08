@@ -15,31 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.38.3'
-          channel: 'stable'
+            channel: 'stable'
 
-      - name: Install Dart/Flutter dependencies
+      - name: Install dependencies
         run: flutter pub get
-
-      - name: Clean build
-        run: flutter clean
-
-      - name: Install CocoaPods
-        run: |
-          cd ios
-          rm -rf Pods
-          rm -f Podfile.lock
-          pod install --repo-update
-
+  
       - name: Build iOS app and package IPA
         run: |
           flutter build ios --no-codesign
@@ -55,5 +38,6 @@ jobs:
         with:
           name: ios-app
           path: build/ios/iphoneos/app.ipa
+
 
 
