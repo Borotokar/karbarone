@@ -19,10 +19,11 @@ jobs:
 
       - run: pod repo update
 
-      - name: Set iOS Platform
+      # --- مرحله اصلاح شده: رفع خطای "no platform was specified" در pod install ---
+      - name: Set iOS Platform to 13.0
         run: |
-          # اطمینان از اعمال iOS Deployment Target حداقل 13.0
-          sed -i '' 's/platform :ios, .*/platform :ios, '\''13.0'\''/g' ios/Podfile
+          # این دستور تضمین می‌کند که خط پلتفرم سراسری در Podfile به درستی تنظیم شده است.
+          sed -i '' 's/^#\? *platform :ios, .*/platform :ios, '\''13.0'\''/' ios/Podfile
 
       - name: Update Podfile to Disable Signing
         run: |
@@ -49,8 +50,9 @@ jobs:
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
 
-      # مرحله اصلاح شده: استفاده از xcodebuild
-      - run: |
+      # --- مرحله اصلاح شده قبلی: برای رفع خطای Exit Code 65 در xcodebuild ---
+      - name: Build Unsigned IPA with xcodebuild
+        run: |
           xcodebuild clean build \
             -workspace ios/Runner.xcworkspace \
             -scheme Runner \
@@ -62,9 +64,10 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             PROVISIONING_PROFILE="" \
             DEVELOPMENT_TEAM="" \
-            # مسیر خروجی build
+            # مطمئن شوید که خروجی در مسیر صحیح برای مراحل بعدی قرار گیرد
             SYMROOT=$PWD/build/ios/iphoneos
 
+      # --- مراحل ساخت IPA بدون تغییر ---
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
 
