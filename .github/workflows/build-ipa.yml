@@ -17,17 +17,16 @@ jobs:
 
       - run: flutter pub get
 
-      # جدید: update CocoaPods repo
       - run: pod repo update
 
-      # جدید: تنظیم platform در Podfile
+      # جدید: تنظیم platform با فایل موقت
       - name: Set iOS Platform
         run: |
-          sed -i '' '/target '\''Runner'\'' do/a\\
-            platform :ios, '\''13.0'\''\\
-          ' ios/Podfile
+          echo "platform :ios, '13.0'" > platform_line.txt
+          sed -i '' '/target '\''Runner'\'' do/ r platform_line.txt' ios/Podfile
+          rm platform_line.txt
 
-      # اضافه کردن disable signing داخل post_install (مانند قبل)
+      # اضافه کردن disable signing (مانند قبل)
       - name: Update Podfile to Disable Signing
         run: |
           cat <<EOF > disable_signing.rb
