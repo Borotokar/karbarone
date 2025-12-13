@@ -17,10 +17,28 @@ jobs:
 
       - run: flutter pub get
 
-      - run: pod repo update
+      # جدید: ویرایش Podfile برای disable signing در همه targets
+      - name: Update Podfile to Disable Signing
+        run: |
+          echo "
+          post_install do |installer|
+            installer.pods_project.targets.each do |target|
+              target.build_configurations.each do |config|
+                config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+                config.build_settings['CODE_SIGN_IDENTITY'] = ''
+                config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
+                config.build_settings['DEVELOPMENT_TEAM'] = ''
+                config.build_settings['PROVISIONING_PROFILE'] = ''
+                config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
+              end
+            end
+          end
+          " >> ios/Podfile
+
+      - run: pod install
         working-directory: ios
 
-      # جدید: disable code signing در project settings
+      # disable code signing در project.pbxproj (قبلی)
       - name: Disable Code Signing
         run: |
           sed -i '' 's/CODE_SIGN_IDENTITY = ".*"/CODE_SIGN_IDENTITY = ""/g' ios/Runner.xcodeproj/project.pbxproj
@@ -31,20 +49,20 @@ jobs:
 
       - run: flutter build ios --release --no-codesign
 
+      # ساخت IPA با symlink به جای mv
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
 
-      - run: mv Runner.app Payload
+      - run: ln -s $PWD/Runner.app $PWD/Payload/Runner.app
         working-directory: build/ios/iphoneos
 
       - run: zip -r app.ipa Payload
         working-directory: build/ios/iphoneos
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v3
         with:
           name: unsigned-ipa
           path: build/ios/iphoneos/app.ipa
-
 
 
 
