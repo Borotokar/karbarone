@@ -19,14 +19,12 @@ jobs:
 
       - run: pod repo update
 
-      # جدید: تنظیم platform با فایل موقت
       - name: Set iOS Platform
         run: |
           echo "platform :ios, '13.0'" > platform_line.txt
           sed -i '' '/target '\''Runner'\'' do/ r platform_line.txt' ios/Podfile
           rm platform_line.txt
 
-      # اضافه کردن disable signing (مانند قبل)
       - name: Update Podfile to Disable Signing
         run: |
           cat <<EOF > disable_signing.rb
@@ -46,13 +44,14 @@ jobs:
 
       - name: Disable Code Signing
         run: |
+          sed -i '' -E 's/DEVELOPMENT_TEAM = .+;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/CODE_SIGN_IDENTITY = ".*"/CODE_SIGN_IDENTITY = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
-          sed -i '' 's/DEVELOPMENT_TEAM = ".*"/DEVELOPMENT_TEAM = ""/g' ios/Runner.xcodeproj/project.pbxproj
 
-      - run: flutter build ios --release --no-codesign
+      # جدید: استفاده از xcodebuild برای build unsigned
+      - run: xcodebuild clean build -workspace ios/Runner.xcworkspace -scheme Runner -configuration Release -sdk iphoneos CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO"
 
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
