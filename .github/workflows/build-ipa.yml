@@ -21,9 +21,8 @@ jobs:
 
       - name: Set iOS Platform
         run: |
-          echo "platform :ios, '13.0'" > platform_line.txt
-          sed -i '' '/target '\''Runner'\'' do/ r platform_line.txt' ios/Podfile
-          rm platform_line.txt
+          # اطمینان از اعمال iOS Deployment Target حداقل 13.0
+          sed -i '' 's/platform :ios, .*/platform :ios, '\''13.0'\''/g' ios/Podfile
 
       - name: Update Podfile to Disable Signing
         run: |
@@ -50,8 +49,21 @@ jobs:
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
 
-      # جدید: استفاده از xcodebuild برای build unsigned
-      - run: xcodebuild clean build -workspace ios/Runner.xcworkspace -scheme Runner -configuration Release -sdk iphoneos CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO"
+      # مرحله اصلاح شده: استفاده از xcodebuild
+      - run: |
+          xcodebuild clean build \
+            -workspace ios/Runner.xcworkspace \
+            -scheme Runner \
+            -configuration Release \
+            -sdk iphoneos \
+            BITCODE_GENERATION_MODE=bitcode \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            PROVISIONING_PROFILE="" \
+            DEVELOPMENT_TEAM="" \
+            # مسیر خروجی build
+            SYMROOT=$PWD/build/ios/iphoneos
 
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
