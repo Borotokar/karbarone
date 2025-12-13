@@ -19,11 +19,23 @@ jobs:
 
       - run: pod repo update
 
-      # --- مرحله اصلاح شده: رفع خطای "no platform was specified" در pod install ---
-      - name: Set iOS Platform to 13.0
+      # --- مرحله جدید و اصلاح شده: تضمین تنظیم شدن پلتفرم iOS 13.0 ---
+      - name: Force Set iOS Platform to 13.0
         run: |
-          # این دستور تضمین می‌کند که خط پلتفرم سراسری در Podfile به درستی تنظیم شده است.
-          sed -i '' 's/^#\? *platform :ios, .*/platform :ios, '\''13.0'\''/' ios/Podfile
+          PODFILE="ios/Podfile"
+          PLATFORM_LINE="platform :ios, '13.0'"
+          
+          # 1. تلاش برای پیدا کردن و جایگزین کردن خط پلتفرم موجود (با کامنت یا بدون کامنت)
+          # استفاده از GNU sed برای macos-latest
+          if ! sed -i '' "s/^#\? *platform :ios, .*/$PLATFORM_LINE/" $PODFILE; then
+            # 2. اگر جایگزینی انجام نشد (مثلا خط پلتفرم وجود نداشت)، خط را به بالای فایل اضافه کن
+            echo "Platform line not found, prepending it to $PODFILE"
+            # اضافه کردن خط پلتفرم و سپس محتوای قدیمی فایل به یک فایل موقت
+            echo "$PLATFORM_LINE" | cat - $PODFILE > temp && mv temp $PODFILE
+          fi
+          
+          echo "Current ios/Podfile head:"
+          head -n 5 $PODFILE # نمایش 5 خط اول برای تأیید
 
       - name: Update Podfile to Disable Signing
         run: |
