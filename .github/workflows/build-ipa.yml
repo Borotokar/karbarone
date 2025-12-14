@@ -19,12 +19,16 @@ jobs:
 
       - run: pod repo update
 
-  # --- مرحله نهایی: تضمین تنظیم شدن پلتفرم iOS 13.0 (جایگزین مراحل قبلی) ---
+      # جدید: تضمین تنظیم platform به 13.0 (اضافه اگر وجود نداشته باشه، جایگزین اگر وجود داره)
       - name: Ensure iOS Platform 13.0 is Set
         run: |
-          # استفاده از sed برای جایگزینی خط platform :ios, ... با platform :ios, '13.0'
-          sed -i '' -E "s/platform :ios, ['\"]?([0-9.]+)?['\"]?/platform :ios, '13.0'/g" ios/Podfile
-          
+          if grep -q "platform :ios" ios/Podfile; then
+            sed -i '' -E "s/platform :ios, ['\"]?([0-9.]+)?['\"]?/platform :ios, '13.0'/g" ios/Podfile
+          else
+            sed -i '' '1i\
+          platform :ios, '\''13.0'\''\
+          ' ios/Podfile
+          fi
           echo "Podfile head after platform update:"
           head -n 5 ios/Podfile
 
@@ -32,6 +36,7 @@ jobs:
         run: |
           cat <<EOF > disable_signing.rb
             target.build_configurations.each do |config|
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'  # force deployment target
               config.build_settings['CODE_SIGN_IDENTITY'] = ''
               config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
               config.build_settings['DEVELOPMENT_TEAM'] = ''
@@ -53,7 +58,6 @@ jobs:
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
 
-      # --- مرحله اصلاح شده قبلی: برای رفع خطای Exit Code 65 در xcodebuild ---
       - name: Build Unsigned IPA with xcodebuild
         run: |
           xcodebuild clean build \
@@ -67,10 +71,8 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             PROVISIONING_PROFILE="" \
             DEVELOPMENT_TEAM="" \
-            # مطمئن شوید که خروجی در مسیر صحیح برای مراحل بعدی قرار گیرد
             SYMROOT=$PWD/build/ios/iphoneos
 
-      # --- مراحل ساخت IPA بدون تغییر ---
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
 
