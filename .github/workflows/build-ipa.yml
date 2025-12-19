@@ -19,14 +19,14 @@ jobs:
 
       - run: pod repo update
 
-      # تضمین تنظیم platform به 14.0 (با regex بهبودیافته)
-      - name: Ensure iOS Platform 14.0 is Set
+      # تضمین تنظیم platform به 15.0 (regex بهبودیافته برای match بهتر)
+      - name: Ensure iOS Platform 15.0 is Set
         run: |
           if grep -q "platform :ios" ios/Podfile; then
-            sed -i '' -E "s/platform :ios, ?['\"]?[0-9.]+['\"]?/platform :ios, '14.0'/g" ios/Podfile
+            sed -i '' -E "s/platform[ ]*:ios,[ ]*['\"]?[0-9.]+['\"]?/platform :ios, '15.0'/g" ios/Podfile
           else
             sed -i '' '1i\
-          platform :ios, '\''14.0'\''\
+          platform :ios, '\''15.0'\''\
           ' ios/Podfile
           fi
           echo "Podfile head after platform update:"
@@ -36,7 +36,7 @@ jobs:
         run: |
           cat <<EOF > disable_signing.rb
             target.build_configurations.each do |config|
-              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'  # force higher target
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'  # force to match SDK min
               config.build_settings['CODE_SIGN_IDENTITY'] = ''
               config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
               config.build_settings['DEVELOPMENT_TEAM'] = ''
@@ -57,7 +57,7 @@ jobs:
           sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
-          sed -i '' -E 's/IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;/IPHONEOS_DEPLOYMENT_TARGET = 14.0;/g' ios/Runner.xcodeproj/project.pbxproj  # force in pbxproj
+          sed -i '' -E 's/IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' ios/Runner.xcodeproj/project.pbxproj  # force min target
 
       - run: xcodebuild clean build -workspace ios/Runner.xcworkspace -scheme Runner -configuration Release -sdk iphoneos CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO"
 
@@ -74,5 +74,3 @@ jobs:
         with:
           name: unsigned-ipa
           path: build/ios/iphoneos/app.ipa
-
-
