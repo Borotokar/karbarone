@@ -19,54 +19,63 @@ jobs:
 
       - run: pod repo update
 
-      # جدید: clean Pods برای جلوگیری از کش قدیمی و ارورهای previews
+      # جدید: clean Pods برای جلوگیری از ارورهای previews و کش قدیمی
       - name: Clean Pods
         run: |
           rm -rf ios/Pods
           rm -f ios/Podfile.lock
           rm -rf ios/Runner.xcworkspace
 
-      - name: Ensure iOS Platform 13.0 is Set 
-        run: | 
-          # استفاده از sed برای جایگزینی خط platform :ios, ... با platform :ios, '13.0' 
-          sed -i '' -E "s/platform :ios, ['\"]?([0-9.]+)?['\"]?/platform :ios, '13.0'/g" ios/Podfile 
-           
-          echo "Podfile head after platform update:" 
-          head -n 5 ios/Podfile 
+      # بهبود: force platform به 15.0 برای سازگاری با Firebase SDK 11.15.0
+      - name: Ensure iOS Platform 15.0 is Set
+        run: |
+          if grep -q "platform :ios" ios/Podfile; then
+            sed -i '' -E "s/platform[[:space:]]*:ios,[[:space:]]*['\"]?[0-9.]+['\"]?/platform :ios, '15.0'/g" ios/Podfile
+          else
+            sed -i '' '1i\
+          platform :ios, '\''15.0'\''\
+          ' ios/Podfile
+          fi
+          echo "Podfile head after platform update:"
+          head -n 5 ios/Podfile
 
-      - name: Update Podfile to Disable Signing 
-        run: | 
-          cat <<EOF > disable_signing.rb 
-            target.build_configurations.each do |config| 
-              config.build_settings['CODE_SIGN_IDENTITY'] = '' 
-              config.build_settings['CODE_SIGN_STYLE'] = 'Manual' 
-              config.build_settings['DEVELOPMENT_TEAM'] = '' 
-              config.build_settings['PROVISIONING_PROFILE'] = '' 
-              config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = '' 
-              config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'  # جدید: force برای حل ارور previews disabling
-            end 
-          EOF 
-          sed -i '' '/flutter_additional_ios_build_settings(target)/ r disable_signing.rb' ios/Podfile 
-          rm disable_signing.rb 
+      - name: Update Podfile to Disable Signing
+        run: |
+          cat <<EOF > disable_signing.rb
+            target.build_configurations.each do |config|
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+              config.build_settings['SWIFT_VERSION'] = '5.0'
+              config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'  # حل ارور previews disabling
+              config.build_settings['CODE_SIGN_IDENTITY'] = ''
+              config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
+              config.build_settings['DEVELOPMENT_TEAM'] = ''
+              config.build_settings['PROVISIONING_PROFILE'] = ''
+              config.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = ''
+            end
+          EOF
+          sed -i '' '/flutter_additional_ios_build_settings(target)/ r disable_signing.rb' ios/Podfile
+          rm disable_signing.rb
 
-      - run: pod install --repo-update 
-        working-directory: ios 
+      - run: pod install --repo-update
+        working-directory: ios
 
       - name: Disable Code Signing
         run: |
-          sed -i '' -E 's/DEVELOPMENT_TEAM = .+;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj
+          sed -i '' -E 's/DEVELOPMENT_TEAM = .+;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj  # حل خطای اصلی development team
           sed -i '' 's/CODE_SIGN_IDENTITY = ".*"/CODE_SIGN_IDENTITY = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
-          sed -i '' -E "s/SWIFT_OPTIMIZATION_LEVEL = .+;/SWIFT_OPTIMIZATION_LEVEL = -Onone;/g" ios/Runner.xcodeproj/project.pbxproj  # جدید: force در pbxproj
+          sed -i '' -E 's/IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' ios/Runner.xcodeproj/project.pbxproj
+          sed -i '' -E "s/SWIFT_VERSION = [0-9.]+;/SWIFT_VERSION = 5.0;/g" ios/Runner.xcodeproj/project.pbxproj
+          sed -i '' -E "s/SWIFT_OPTIMIZATION_LEVEL = .+;/SWIFT_OPTIMIZATION_LEVEL = -Onone;/g" ios/Runner.xcodeproj/project.pbxproj  # حل ارور previews disabling
 
       - run: flutter build ios --release --no-codesign
 
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
 
-      - run: mv Runner.app Payload
+      - run: ln -s $PWD/Runner.app $PWD/Payload/Runner.app
         working-directory: build/ios/iphoneos
 
       - run: zip -r app.ipa Payload
