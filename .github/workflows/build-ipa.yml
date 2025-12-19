@@ -96,7 +96,7 @@ jobs:
 
       - run: zip -r app.ipa Payload
         working-directory: build/ios/iphoneos
-        - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: unsigned-ipa
           path: build/ios/iphoneos/app.ipa
