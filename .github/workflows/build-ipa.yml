@@ -19,14 +19,14 @@ jobs:
 
       - run: pod repo update
 
-      # جدید: clean Pods برای جلوگیری از ارورهای previews و کش قدیمی
+      # clean Pods (اگر از قبل داشتید، نگه دارید)
       - name: Clean Pods
         run: |
           rm -rf ios/Pods
           rm -f ios/Podfile.lock
           rm -rf ios/Runner.xcworkspace
 
-      # بهبود: force platform به 15.0 برای سازگاری با Firebase SDK 11.15.0
+      # تنظیم platform (اگر از قبل داشتید، نگه دارید)
       - name: Ensure iOS Platform 15.0 is Set
         run: |
           if grep -q "platform :ios" ios/Podfile; then
@@ -45,7 +45,7 @@ jobs:
             target.build_configurations.each do |config|
               config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
               config.build_settings['SWIFT_VERSION'] = '5.0'
-              config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'  # حل ارور previews disabling
+              config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Onone'
               config.build_settings['CODE_SIGN_IDENTITY'] = ''
               config.build_settings['CODE_SIGN_STYLE'] = 'Manual'
               config.build_settings['DEVELOPMENT_TEAM'] = ''
@@ -59,18 +59,34 @@ jobs:
       - run: pod install --repo-update
         working-directory: ios
 
+      # disable signing با تمرکز روی DEVELOPMENT_TEAM
       - name: Disable Code Signing
         run: |
-          sed -i '' -E 's/DEVELOPMENT_TEAM = .+;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj  # حل خطای اصلی development team
+          # گسترش sed برای خالی کردن DEVELOPMENT_TEAM در همه بخش‌ها (Release/Debug و غیره)
+          sed -i '' -E 's/DEVELOPMENT_TEAM = .+;/DEVELOPMENT_TEAM = "";/g' ios/Runner.xcodeproj/project.pbxproj
+          sed -i '' -E 's/DEVELOPMENT_TEAM = "[^"]*"/DEVELOPMENT_TEAM = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/CODE_SIGN_IDENTITY = ".*"/CODE_SIGN_IDENTITY = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE = ".*"/PROVISIONING_PROFILE = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' 's/PROVISIONING_PROFILE_SPECIFIER = ".*"/PROVISIONING_PROFILE_SPECIFIER = ""/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' -E 's/IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' ios/Runner.xcodeproj/project.pbxproj
           sed -i '' -E "s/SWIFT_VERSION = [0-9.]+;/SWIFT_VERSION = 5.0;/g" ios/Runner.xcodeproj/project.pbxproj
-          sed -i '' -E "s/SWIFT_OPTIMIZATION_LEVEL = .+;/SWIFT_OPTIMIZATION_LEVEL = -Onone;/g" ios/Runner.xcodeproj/project.pbxproj  # حل ارور previews disabling
+          sed -i '' -E "s/SWIFT_OPTIMIZATION_LEVEL = .+;/SWIFT_OPTIMIZATION_LEVEL = -Onone;/g" ios/Runner.xcodeproj/project.pbxproj
 
-      - run: flutter build ios --release --no-codesign
+      # جدید: استفاده از xcodebuild به جای flutter build برای build unsigned
+      - name: Build Unsigned IPA with xcodebuild
+        run: |
+          xcodebuild clean build \
+            -workspace ios/Runner.xcworkspace \
+            -scheme Runner \
+            -configuration Release \
+            -sdk iphoneos \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            DEVELOPMENT_TEAM="" \
+            PROVISIONING_PROFILE="" \
+            SYMROOT=$PWD/build/ios/iphoneos
 
       - run: mkdir Payload
         working-directory: build/ios/iphoneos
@@ -80,8 +96,7 @@ jobs:
 
       - run: zip -r app.ipa Payload
         working-directory: build/ios/iphoneos
-
-      - uses: actions/upload-artifact@v4
+        - uses: actions/upload-artifact@v4
         with:
           name: unsigned-ipa
           path: build/ios/iphoneos/app.ipa
